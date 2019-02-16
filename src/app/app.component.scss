@@ -1,0 +1,59 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.titlebar-font {
+    margin-left: 16px;
+    text-decoration: none;
+    color: #fefefe;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+.titlebar-font:hover {
+    color: #af80c8;
+}
+
+.mn-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.bucket-nav-elem {
+    width: 100%;
+    display: block;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.layout-firstItem {
+    display: flex;
+}
+.layout-secondItem {
+    display: flex;
+}
+
+.profile-icon {
+    height: 34px;
+    width: 34px;
+    border: 1px solid #666;
+    border-radius: 6vh;
+}
+
+.last-btn {
+    margin-left: auto;
+    width: 12vw;
+    margin-right: 20px;
+}
+
+.titlebar-font {
+    text-emphasis: none;
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+body {
+    overflow: visible;
+}

@@ -1,0 +1,57 @@
+.input-item {
+    display: block;
+    width: 100%;
+}
+
+.mat-form-field {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+// .input-item .input-owner {
+
+// }
+
+// .item-input .item-name {
+
+// }
+// .item-input .item-brewery {
+
+// }
+// .item-input .item-packageSize {
+
+// }
+// .item-input .item-numAvailable {
+
+// }
+// .item-input .item-desiredSwap {
+
+// }
+.item-price,
+.item-priceDivisor,
+.item-numAvailable,
+.item-packageSize {
+    width: 45%;
+    display: flex;
+}
+
+.item-priceDivisor,
+.item-packageSize {
+    margin-left: auto;
+}
+
+.item-double-input-row {
+    display: flex;
+}
+
+.modal-btns {
+    margin-left: auto;
+}
+
+// .item-input .item-style {
+
+// }
+// .item-input .item-minTeir {
+
+// }

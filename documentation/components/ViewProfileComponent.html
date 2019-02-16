@@ -1,0 +1,791 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>swap-board documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">swap-board documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ViewProfileComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/profile/view-profile/view-profile.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-view-profile</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./view-profile.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./view-profile.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isEditing">isEditing</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onChangeUserImage">onChangeUserImage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onEditProfile">onEditProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSubmitChanges">onSubmitChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#profile">profile</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, userService: <a href="../injectables/UserService.html">UserService</a>, matDialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/profile/view-profile/view-profile.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>matDialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/profile/view-profile/view-profile.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isEditing"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            isEditing
+                            </b>
+                            <a href="#isEditing"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>isEditing:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/profile/view-profile/view-profile.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onChangeUserImage"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onChangeUserImage
+                            </b>
+                            <a href="#onChangeUserImage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>onChangeUserImage:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    this.matDialog
+      .open(SimpleDialogComponent, {
+        width: &#x27;35vw&#x27;,
+        data: {
+          title: &#x27;Change profile picture&#x27;,
+          wantsInput: true,
+          cancelBtnText: &#x27;Cancel&#x27;,
+          acceptBtnText: &#x27;Save Picture&#x27;,
+          simpleMessage:
+            &#x27;Please supply a url to an image (google image links should work)&#x27;
+        }
+      })
+      .afterClosed()
+      .subscribe(result &#x3D;&gt; {
+        if (result) {
+          this.profile.image &#x3D; result;
+          this.userService.updateCurrentUser(this.profile);
+        }
+      });
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/profile/view-profile/view-profile.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onEditProfile"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onEditProfile
+                            </b>
+                            <a href="#onEditProfile"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>onEditProfile:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    this.isEditing &#x3D; true;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/profile/view-profile/view-profile.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onSubmitChanges"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onSubmitChanges
+                            </b>
+                            <a href="#onSubmitChanges"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>onSubmitChanges:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    this.userService
+      .updateCurrentUser(this.profile)
+      .then(() &#x3D;&gt; {
+        this.isEditing &#x3D; false;
+      })
+      .catch(() &#x3D;&gt; {
+        window.alert(&#x27;Saving Changes Failed, Try Again.&#x27;);
+      });
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/profile/view-profile/view-profile.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="profile"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            profile
+                            </b>
+                            <a href="#profile"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>profile:     <code><a href="../classes/SwapBoardUserModel.html" target="_self" >SwapBoardUserModel</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/SwapBoardUserModel.html" target="_self" >SwapBoardUserModel</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/profile/view-profile/view-profile.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { SwapBoardUserModel } from &#x27;../../core/user.model&#x27;;
+import { UserService } from &#x27;src/app/core/services/user.service&#x27;;
+import { SimpleDialogComponent } from &#x27;src/app/core/simple-dialog/simple-dialog.component&#x27;;
+import { MatDialog } from &#x27;@angular/material&#x27;;
+
+@Component({
+  selector: &#x27;app-view-profile&#x27;,
+  templateUrl: &#x27;./view-profile.component.html&#x27;,
+  styleUrls: [&#x27;./view-profile.component.scss&#x27;]
+})
+export class ViewProfileComponent implements OnInit {
+  public profile: SwapBoardUserModel;
+  public isEditing: boolean;
+
+  constructor(
+    private route: ActivatedRoute,
+    private userService: UserService,
+    private matDialog: MatDialog
+  ) {
+    this.isEditing &#x3D; false;
+  }
+
+  ngOnInit() {
+    this.profile &#x3D; new SwapBoardUserModel();
+    this.profile.name &#x3D; this.route.snapshot.data.data.name;
+    this.profile.image &#x3D; this.route.snapshot.data.data.image;
+    this.profile.provider &#x3D; this.route.snapshot.data.data.provider;
+    this.profile.uid &#x3D; this.route.snapshot.data.data.uid;
+  }
+
+  public onEditProfile &#x3D; () &#x3D;&gt; {
+    this.isEditing &#x3D; true;
+  }
+
+  public onSubmitChanges &#x3D; () &#x3D;&gt; {
+    this.userService
+      .updateCurrentUser(this.profile)
+      .then(() &#x3D;&gt; {
+        this.isEditing &#x3D; false;
+      })
+      .catch(() &#x3D;&gt; {
+        window.alert(&#x27;Saving Changes Failed, Try Again.&#x27;);
+      });
+  }
+
+  public onChangeUserImage &#x3D; () &#x3D;&gt; {
+    this.matDialog
+      .open(SimpleDialogComponent, {
+        width: &#x27;35vw&#x27;,
+        data: {
+          title: &#x27;Change profile picture&#x27;,
+          wantsInput: true,
+          cancelBtnText: &#x27;Cancel&#x27;,
+          acceptBtnText: &#x27;Save Picture&#x27;,
+          simpleMessage:
+            &#x27;Please supply a url to an image (google image links should work)&#x27;
+        }
+      })
+      .afterClosed()
+      .subscribe(result &#x3D;&gt; {
+        if (result) {
+          this.profile.image &#x3D; result;
+          this.userService.updateCurrentUser(this.profile);
+        }
+      });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;profile-outer-container&quot;&gt;
+    &lt;div class&#x3D;&quot;profile-image-container&quot;&gt;
+        &lt;div class&#x3D;&quot;colElemSpacer&quot;&gt;&lt;/div&gt;
+        &lt;img
+            class&#x3D;&quot;user-image&quot;
+            src&#x3D;&quot;{{profile.image}}&quot;&gt;
+        &lt;button
+            mat-flat-button
+            style&#x3D;&quot;margin: auto;&quot;
+            (click)&#x3D;&quot;onChangeUserImage()&quot;&gt;
+            Change User Image
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;profile-form-container&quot;&gt;
+        &lt;div *ngIf&#x3D;&quot;isEditing&quot;&gt;
+            &lt;button
+                class&#x3D;&quot;board-toolbar-container-button&quot;
+                mat-icon-button
+                color&#x3D;&quot;primary&quot;
+                (click)&#x3D;&quot;onEditProfile()&quot;&gt;
+                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;save&lt;/mat-icon&gt;
+                Save Changes
+            &lt;/button&gt;
+            &lt;mat-form-field class&#x3D;&quot;profile-form-field&quot;&gt;
+                &lt;label&gt;Display Name&lt;/label&gt;
+                &lt;input
+                    matInput
+                    [(value)]&#x3D;&quot;profile.name&quot;&gt;
+            &lt;/mat-form-field&gt;
+            &lt;mat-form-field class&#x3D;&quot;profile-form-field&quot;&gt;
+                &lt;label&gt;Account Type&lt;/label&gt;
+                &lt;input
+                    matInput
+                    [(value)]&#x3D;&quot;profile.provider&quot;
+                    disabled&gt;
+            &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+        &lt;div *ngIf&#x3D;&quot;!isEditing&quot;&gt;
+            &lt;button
+                class&#x3D;&quot;board-toolbar-container-button&quot;
+                mat-icon-button
+                color&#x3D;&quot;primary&quot;
+                (click)&#x3D;&quot;onSubmitChanges()&quot;&gt;
+                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/mat-icon&gt;
+                Edit Profile
+            &lt;/button&gt;
+            &lt;mat-form-field class&#x3D;&quot;profile-form-field&quot;&gt;
+                &lt;label&gt;Display Name&lt;/label&gt;
+                &lt;input
+                    matInput
+                    [(value)]&#x3D;&quot;profile.name&quot;
+                    disabled&gt;
+            &lt;/mat-form-field&gt;
+            &lt;mat-form-field class&#x3D;&quot;profile-form-field&quot;&gt;
+                &lt;label&gt;Account Type&lt;/label&gt;
+                &lt;input
+                    matInput
+                    [(value)]&#x3D;&quot;profile.provider&quot;
+                    disabled&gt;
+            &lt;/mat-form-field&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;profile-btn-container&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./view-profile.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.profile-outer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.profile-image-container {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    align-content: center;
+}
+.profile-form-container {
+    display: flex;
+    width: 45vw;
+    padding: 15px;
+    flex-direction: column;
+}
+.profile-btn-container {
+    display: flex;
+    width: 20%;
+}
+
+.profile-form-field {
+    width: 100%;
+    display: block;
+}
+
+.colElemSpacer {
+    width: 60px;
+    height: 60px;
+}
+
+.user-image {
+    height: 39vh;
+    margin: auto;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="profile-outer-container">    <div class="profile-image-container">        <div class="colElemSpacer"></div>        <img            class="user-image"            src="{{profile.image}}">        <button            mat-flat-button            style="margin: auto;"            (click)="onChangeUserImage()">            Change User Image        </button>    </div>    <div class="profile-form-container">        <div *ngIf="isEditing">            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                (click)="onEditProfile()">                <mat-icon class="material-icons">save</mat-icon>                Save Changes            </button>            <mat-form-field class="profile-form-field">                <label>Display Name</label>                <input                    matInput                    [(value)]="profile.name">            </mat-form-field>            <mat-form-field class="profile-form-field">                <label>Account Type</label>                <input                    matInput                    [(value)]="profile.provider"                    disabled>            </mat-form-field>        </div>        <div *ngIf="!isEditing">            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                (click)="onSubmitChanges()">                <mat-icon class="material-icons">edit</mat-icon>                Edit Profile            </button>            <mat-form-field class="profile-form-field">                <label>Display Name</label>                <input                    matInput                    [(value)]="profile.name"                    disabled>            </mat-form-field>            <mat-form-field class="profile-form-field">                <label>Account Type</label>                <input                    matInput                    [(value)]="profile.provider"                    disabled>            </mat-form-field>        </div>    </div>    <div class="profile-btn-container"></div></div></div>'
+    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ViewProfileComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ViewProfileComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

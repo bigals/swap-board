@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+    {{data.simpleMessage}}
+    <mat-form-field class="profile-form-field">
+        <label>Image URL</label>
+        <input
+            matInput
+            *ngIf="data.wantsInput"
+            [(ngModel)]="data.inputValue">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button
+        mat-flat-button
+        color="primary"
+        class="modal-btns"
+        (click)="onCancel()">
+        {{data.cancelBtnText}}
+    </button>
+    <button
+        mat-flat-button
+        color="primary"
+        class="modal-btns"
+        (click)="onAccept()"
+        cdkFocusInitial>
+        {{data.acceptBtnText}}
+    </button>
+</div>

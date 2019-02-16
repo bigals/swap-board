@@ -1,0 +1,36 @@
+.profile-outer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.profile-image-container {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    align-content: center;
+}
+.profile-form-container {
+    display: flex;
+    width: 45vw;
+    padding: 15px;
+    flex-direction: column;
+}
+.profile-btn-container {
+    display: flex;
+    width: 20%;
+}
+
+.profile-form-field {
+    width: 100%;
+    display: block;
+}
+
+.colElemSpacer {
+    width: 60px;
+    height: 60px;
+}
+
+.user-image {
+    height: 39vh;
+    margin: auto;
+}

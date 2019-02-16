@@ -1,0 +1,1983 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>swap-board documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">swap-board documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>MainBoardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/swap-board/main-board/main-board.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-main-board</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./main-board.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./main-board.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#applyFilter">applyFilter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#currentUserName">currentUserName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getNextId">getNextId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isAllSelected">isAllSelected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isASelectionOwnedByUser">isASelectionOwnedByUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isAtleastOneUnOwnedSelection">isAtleastOneUnOwnedSelection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#masterToggle">masterToggle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onAddItem">onAddItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onDeleteItem">onDeleteItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onEditItem">onEditItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onProposeTrade">onProposeTrade</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selection">selection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showDeleteBtn">showDeleteBtn</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showEditPostingBtn">showEditPostingBtn</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showProposeBtn">showProposeBtn</a>
+                            </li>
+                            <li>
+                                <a href="#sort">sort</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#swapItems">swapItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#swapItemsDS">swapItemsDS</a>
+                            </li>
+                            <li>
+                                <a href="#table">table</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#title">title</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#updateItems">updateItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userPictureSrc">userPictureSrc</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, boardService: <a href="../injectables/BoardService.html">BoardService</a>, matDialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>boardService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/BoardService.html" target="_self" >BoardService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>matDialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="applyFilter"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            applyFilter
+                            </b>
+                            <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>applyFilter:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>(inputVal: string) &#x3D;&gt; {
+    this.swapItemsDS.filter &#x3D; inputVal.trim().toLowerCase();
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:76</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserName"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            currentUserName
+                            </b>
+                            <a href="#currentUserName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>currentUserName:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            displayedColumns
+                            </b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>displayedColumns:     <code>string[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getNextId"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            getNextId
+                            </b>
+                            <a href="#getNextId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>getNextId:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    this.swapItemsDS.data.sort((item1, item2) &#x3D;&gt; {
+      return item1.id - item2.id;
+    });
+    return this.swapItemsDS.data[this.swapItemsDS.data.length - 1].id++;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:127</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAllSelected"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            isAllSelected
+                            </b>
+                            <a href="#isAllSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>isAllSelected:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    const numSelected &#x3D; this.selection.selected.length;
+    const numRows &#x3D; this.swapItemsDS.data.length;
+    return numSelected &#x3D;&#x3D;&#x3D; numRows;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isASelectionOwnedByUser"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            isASelectionOwnedByUser
+                            </b>
+                            <a href="#isASelectionOwnedByUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>isASelectionOwnedByUser:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>selects &#x3D;&gt; {
+    for (const item of selects.selected) {
+      if (item.owner &#x3D;&#x3D;&#x3D; this.currentUserName) {
+        return true;
+      }
+    }
+    return false;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:100</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAtleastOneUnOwnedSelection"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            isAtleastOneUnOwnedSelection
+                            </b>
+                            <a href="#isAtleastOneUnOwnedSelection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>isAtleastOneUnOwnedSelection:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>selects &#x3D;&gt; {
+    for (const item of selects.selected) {
+      if (item.owner !&#x3D;&#x3D; this.currentUserName) {
+        return true;
+      }
+    }
+    return false;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:108</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="masterToggle"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            masterToggle
+                            </b>
+                            <a href="#masterToggle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>masterToggle:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    this.isAllSelected()
+      ? this.selection.clear()
+      : this.swapItemsDS.data.forEach(row &#x3D;&gt; this.selection.select(row));
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Selects all rows if they are not all selected; otherwise clear selection. </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onAddItem"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onAddItem
+                            </b>
+                            <a href="#onAddItem"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>onAddItem:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    this.matDialog
+      .open(AddEditItemDialogComponent, {
+        width: &#x27;35vw&#x27;,
+        data: {
+          title: &#x27;Add Item&#x27;,
+          isEdit: false,
+          currentUserName: this.currentUserName,
+          // tslint:disable-next-line:arrow-return-shorthand
+          nextId: this.getNextId()
+        }
+      })
+      .afterClosed()
+      .subscribe(result &#x3D;&gt; {
+        if (result) {
+          this.boardService.addItem(result);
+          // this.swapItemsDS.data.push(result);
+          this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+            this.swapItemsDS.data
+          );
+          this.swapItemsDS.paginator &#x3D; this.paginator;
+          this.swapItemsDS.sort &#x3D; this.sort;
+
+          this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+        }
+      });
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:156</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onDeleteItem"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onDeleteItem
+                            </b>
+                            <a href="#onDeleteItem"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>onDeleteItem:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>selected &#x3D;&gt; {
+    if (selected.length &#x3D;&#x3D;&#x3D; 1) {
+      this.boardService.deleteItem(selected.id);
+      for (let i &#x3D; 0; i &lt; this.swapItemsDS.data.length; i++) {
+        if (selected[0].id &#x3D;&#x3D;&#x3D; this.swapItemsDS.data[i].id) {
+          this.swapItemsDS.data.splice(i, 1);
+          this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+            this.swapItemsDS.data
+          );
+          this.swapItemsDS.paginator &#x3D; this.paginator;
+          this.swapItemsDS.sort &#x3D; this.sort;
+
+          this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+        }
+      }
+    } else {
+      // must select only one item to delete at a time
+      window.alert(
+        &#x27;Please select only one item to delete at a time; Also you may only delete your posted items&#x27;
+      );
+    }
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:134</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onEditItem"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onEditItem
+                            </b>
+                            <a href="#onEditItem"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>onEditItem:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    this.matDialog
+      .open(AddEditItemDialogComponent, {
+        width: &#x27;250px&#x27;,
+        data: {
+          title: &#x27;Edit Item(s)&#x27;,
+          isEdit: true,
+          items: this.selection.selected.filter((item, index) &#x3D;&gt; {
+            return item.owner &#x3D;&#x3D;&#x3D; this.currentUserName;
+          })
+        }
+      })
+      .afterClosed()
+      .subscribe(result &#x3D;&gt; {
+        this.updateItems(result);
+      });
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:183</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onProposeTrade"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onProposeTrade
+                            </b>
+                            <a href="#onProposeTrade"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>onProposeTrade:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    const dialogRef &#x3D; this.matDialog.open(ProposeTradeDialogComponent, {
+      width: &#x27;250px&#x27;,
+      data: {
+        title: &#x27;Propose Trade&#x27;,
+        items: this.selection.selected.filter((item, index) &#x3D;&gt; {
+          return item.owner !&#x3D;&#x3D; this.currentUserName;
+        }),
+        ownedItems: this.swapItems.filter((item, index) &#x3D;&gt; {
+          return item.owner &#x3D;&#x3D;&#x3D; this.currentUserName;
+        })
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result &#x3D;&gt; {
+      const proposals &#x3D; result;
+      console.log(proposals);
+      // remove proposals from main board (mark them pending trade)
+      // Write new proposals to database
+      // ??refresh grid??
+    });
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="200" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:200</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator
+                            </b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>paginator:     <code>MatPaginator</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            selection
+                            </b>
+                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>selection:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showDeleteBtn"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            showDeleteBtn
+                            </b>
+                            <a href="#showDeleteBtn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>showDeleteBtn:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    return (
+      this.selection.selected.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp;
+      this.selection.selected[0].owner &#x3D;&#x3D;&#x3D; this.currentUserName
+    );
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:86</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showEditPostingBtn"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            showEditPostingBtn
+                            </b>
+                            <a href="#showEditPostingBtn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>showEditPostingBtn:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    return (
+      this.selection.selected.length &amp;&amp;
+      this.isASelectionOwnedByUser(this.selection)
+    );
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showProposeBtn"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            showProposeBtn
+                            </b>
+                            <a href="#showProposeBtn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>showProposeBtn:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {
+    return (
+      this.selection.selected.length &amp;&amp;
+      this.isAtleastOneUnOwnedSelection(this.selection)
+    );
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:93</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sort"></a>
+                        <span class="name">
+                            <b>
+                            sort
+                            </b>
+                            <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>sort:     <code>MatSort</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatSort</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatSort)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="swapItems"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            swapItems
+                            </b>
+                            <a href="#swapItems"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>swapItems:     <code><a href="../interfaces/SwapItem.html" target="_self" >SwapItem[]</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/SwapItem.html" target="_self" >SwapItem[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="swapItemsDS"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            swapItemsDS
+                            </b>
+                            <a href="#swapItemsDS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>swapItemsDS:     <code><a href="../interfaces/SwapItem.html" target="_self" >MatTableDataSource&lt;SwapItem&gt;</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/SwapItem.html" target="_self" >MatTableDataSource&lt;SwapItem&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="table"></a>
+                        <span class="name">
+                            <b>
+                            table
+                            </b>
+                            <a href="#table"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>table:     <code>MatTable&lt;any&gt;</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatTable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatTable)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            title
+                            </b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>title:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateItems"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            updateItems
+                            </b>
+                            <a href="#updateItems"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>updateItems:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>updatedItems &#x3D;&gt; {
+    for (const updatedItem of updatedItems) {
+      for (let item of this.swapItemsDS.data) {
+        if (item.id &#x3D;&#x3D;&#x3D; updatedItem.id) {
+          item &#x3D; updatedItem;
+        }
+      }
+    }
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:117</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userPictureSrc"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            userPictureSrc
+                            </b>
+                            <a href="#userPictureSrc"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>userPictureSrc:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { SelectionModel } from &#x27;@angular/cdk/collections&#x27;;
+import {
+  MatPaginator,
+  MatSort,
+  MatDialog,
+  MatDialogRef,
+  MatTableDataSource,
+  MatTable,
+  MAT_DIALOG_DATA
+} from &#x27;@angular/material&#x27;;
+
+import { SwapItem, BoardService } from &#x27;../../core/services/board.service&#x27;;
+import { AddEditItemDialogComponent } from &#x27;../add-edit-item-dialog/add-edit-item-dialog.component&#x27;;
+import { ProposeTradeDialogComponent } from &#x27;../propose-trade-dialog/propose-trade-dialog.component&#x27;;
+
+@Component({
+  selector: &#x27;app-main-board&#x27;,
+  templateUrl: &#x27;./main-board.component.html&#x27;,
+  styleUrls: [&#x27;./main-board.component.scss&#x27;]
+})
+export class MainBoardComponent implements OnInit {
+  public title: string;
+  public userPictureSrc: string;
+  public displayedColumns: string[];
+  public swapItems: SwapItem[];
+  public swapItemsDS: MatTableDataSource&lt;SwapItem&gt;;
+  public selection: any;
+  public currentUserName: string;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatTable) table: MatTable&lt;any&gt;;
+
+  constructor(
+    private route: ActivatedRoute,
+    private boardService: BoardService,
+    private matDialog: MatDialog
+  ) {
+    this.displayedColumns &#x3D; [
+      &#x27;select&#x27;,
+      &#x27;name&#x27;,
+      &#x27;brewery&#x27;,
+      &#x27;style&#x27;,
+      &#x27;teir&#x27;,
+      &#x27;numAvailable&#x27;,
+      &#x27;packageSize&#x27;,
+      &#x27;owner&#x27;,
+      &#x27;desiredSwap&#x27;,
+      &#x27;minTeirAccepted&#x27;
+    ];
+  }
+
+  ngOnInit() {
+    this.currentUserName &#x3D; this.route.snapshot.data.data.name;
+    this.swapItems &#x3D; this.boardService.getAllItems();
+    this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(this.swapItems);
+    this.swapItemsDS.paginator &#x3D; this.paginator;
+    this.swapItemsDS.sort &#x3D; this.sort;
+
+    this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+  }
+  public isAllSelected &#x3D; () &#x3D;&gt; {
+    const numSelected &#x3D; this.selection.selected.length;
+    const numRows &#x3D; this.swapItemsDS.data.length;
+    return numSelected &#x3D;&#x3D;&#x3D; numRows;
+  }
+
+  /** Selects all rows if they are not all selected; otherwise clear selection. */
+  public masterToggle &#x3D; () &#x3D;&gt; {
+    this.isAllSelected()
+      ? this.selection.clear()
+      : this.swapItemsDS.data.forEach(row &#x3D;&gt; this.selection.select(row));
+  }
+
+  public applyFilter &#x3D; (inputVal: string) &#x3D;&gt; {
+    this.swapItemsDS.filter &#x3D; inputVal.trim().toLowerCase();
+  }
+
+  public showEditPostingBtn &#x3D; () &#x3D;&gt; {
+    return (
+      this.selection.selected.length &amp;&amp;
+      this.isASelectionOwnedByUser(this.selection)
+    );
+  }
+  public showDeleteBtn &#x3D; () &#x3D;&gt; {
+    return (
+      this.selection.selected.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp;
+      this.selection.selected[0].owner &#x3D;&#x3D;&#x3D; this.currentUserName
+    );
+  }
+
+  public showProposeBtn &#x3D; () &#x3D;&gt; {
+    return (
+      this.selection.selected.length &amp;&amp;
+      this.isAtleastOneUnOwnedSelection(this.selection)
+    );
+  }
+
+  private isASelectionOwnedByUser &#x3D; selects &#x3D;&gt; {
+    for (const item of selects.selected) {
+      if (item.owner &#x3D;&#x3D;&#x3D; this.currentUserName) {
+        return true;
+      }
+    }
+    return false;
+  }
+  private isAtleastOneUnOwnedSelection &#x3D; selects &#x3D;&gt; {
+    for (const item of selects.selected) {
+      if (item.owner !&#x3D;&#x3D; this.currentUserName) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  private updateItems &#x3D; updatedItems &#x3D;&gt; {
+    for (const updatedItem of updatedItems) {
+      for (let item of this.swapItemsDS.data) {
+        if (item.id &#x3D;&#x3D;&#x3D; updatedItem.id) {
+          item &#x3D; updatedItem;
+        }
+      }
+    }
+  }
+
+  private getNextId &#x3D; () &#x3D;&gt; {
+    this.swapItemsDS.data.sort((item1, item2) &#x3D;&gt; {
+      return item1.id - item2.id;
+    });
+    return this.swapItemsDS.data[this.swapItemsDS.data.length - 1].id++;
+  }
+
+  public onDeleteItem &#x3D; selected &#x3D;&gt; {
+    if (selected.length &#x3D;&#x3D;&#x3D; 1) {
+      this.boardService.deleteItem(selected.id);
+      for (let i &#x3D; 0; i &lt; this.swapItemsDS.data.length; i++) {
+        if (selected[0].id &#x3D;&#x3D;&#x3D; this.swapItemsDS.data[i].id) {
+          this.swapItemsDS.data.splice(i, 1);
+          this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+            this.swapItemsDS.data
+          );
+          this.swapItemsDS.paginator &#x3D; this.paginator;
+          this.swapItemsDS.sort &#x3D; this.sort;
+
+          this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+        }
+      }
+    } else {
+      // must select only one item to delete at a time
+      window.alert(
+        &#x27;Please select only one item to delete at a time; Also you may only delete your posted items&#x27;
+      );
+    }
+  }
+  public onAddItem &#x3D; () &#x3D;&gt; {
+    this.matDialog
+      .open(AddEditItemDialogComponent, {
+        width: &#x27;35vw&#x27;,
+        data: {
+          title: &#x27;Add Item&#x27;,
+          isEdit: false,
+          currentUserName: this.currentUserName,
+          // tslint:disable-next-line:arrow-return-shorthand
+          nextId: this.getNextId()
+        }
+      })
+      .afterClosed()
+      .subscribe(result &#x3D;&gt; {
+        if (result) {
+          this.boardService.addItem(result);
+          // this.swapItemsDS.data.push(result);
+          this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+            this.swapItemsDS.data
+          );
+          this.swapItemsDS.paginator &#x3D; this.paginator;
+          this.swapItemsDS.sort &#x3D; this.sort;
+
+          this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+        }
+      });
+  }
+  public onEditItem &#x3D; () &#x3D;&gt; {
+    this.matDialog
+      .open(AddEditItemDialogComponent, {
+        width: &#x27;250px&#x27;,
+        data: {
+          title: &#x27;Edit Item(s)&#x27;,
+          isEdit: true,
+          items: this.selection.selected.filter((item, index) &#x3D;&gt; {
+            return item.owner &#x3D;&#x3D;&#x3D; this.currentUserName;
+          })
+        }
+      })
+      .afterClosed()
+      .subscribe(result &#x3D;&gt; {
+        this.updateItems(result);
+      });
+  }
+  public onProposeTrade &#x3D; () &#x3D;&gt; {
+    const dialogRef &#x3D; this.matDialog.open(ProposeTradeDialogComponent, {
+      width: &#x27;250px&#x27;,
+      data: {
+        title: &#x27;Propose Trade&#x27;,
+        items: this.selection.selected.filter((item, index) &#x3D;&gt; {
+          return item.owner !&#x3D;&#x3D; this.currentUserName;
+        }),
+        ownedItems: this.swapItems.filter((item, index) &#x3D;&gt; {
+          return item.owner &#x3D;&#x3D;&#x3D; this.currentUserName;
+        })
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result &#x3D;&gt; {
+      const proposals &#x3D; result;
+      console.log(proposals);
+      // remove proposals from main board (mark them pending trade)
+      // Write new proposals to database
+      // ??refresh grid??
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;main-board-container&quot;&gt;
+    &lt;div class&#x3D;&quot;main-board&quot;&gt;
+        &lt;div class&#x3D;&quot;board-toolbar-outer-container&quot;&gt;
+            &lt;button
+                class&#x3D;&quot;board-toolbar-container-button&quot;
+                mat-icon-button
+                color&#x3D;&quot;primary&quot;
+                (click)&#x3D;&quot;onAddItem()&quot;&gt;
+                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;add_circle&lt;/mat-icon&gt;
+                Add Item
+            &lt;/button&gt;
+
+            &lt;!-- *ngIf&#x3D;&quot;showEditPostingBtn()&quot; --&gt;
+            &lt;button
+                class&#x3D;&quot;board-toolbar-container-button&quot;
+                mat-icon-button
+                color&#x3D;&quot;primary&quot;
+                *ngIf&#x3D;&quot;false&quot;
+                (click)&#x3D;&quot;onEditItem()&quot;&gt;
+                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/mat-icon&gt;
+                Edit Posting
+            &lt;/button&gt;
+            &lt;!-- *ngIf&#x3D;&quot;showEditPostingBtn()&quot; --&gt;
+
+            &lt;button
+                class&#x3D;&quot;board-toolbar-container-button&quot;
+                mat-icon-button
+                color&#x3D;&quot;primary&quot;
+                *ngIf&#x3D;&quot;showProposeBtn()&quot;
+                (click)&#x3D;&quot;onProposeTrade()&quot;&gt;
+                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;pan_tool&lt;/mat-icon&gt;
+                Propose Trade
+            &lt;/button&gt;
+            &lt;button
+                class&#x3D;&quot;board-toolbar-container-button&quot;
+                mat-icon-button
+                color&#x3D;&quot;primary&quot;
+                *ngIf&#x3D;&quot;showDeleteBtn()&quot;
+                (click)&#x3D;&quot;onDeleteItem(selection.selected)&quot;&gt;
+                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;delete&lt;/mat-icon&gt;
+                Delete Item
+            &lt;/button&gt;
+
+            &lt;div class&#x3D;&quot;board-toolbar-container-filter&quot;&gt;
+                &lt;mat-form-field&gt;
+                    &lt;input
+                        matInput
+                        (keyup)&#x3D;&quot;applyFilter($event.target.value)&quot;
+                        placeholder&#x3D;&quot;Filter&quot;&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;main-board-table-container&quot;&gt;
+            &lt;table
+                #table
+                class&#x3D;&quot;main-board-table mat-elevation-z8&quot;
+                mat-table
+                matSort
+                [dataSource]&#x3D;&quot;swapItemsDS&quot;&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;select&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        &lt;mat-checkbox
+                            (change)&#x3D;&quot;$event ? masterToggle() : null&quot;
+                            [checked]&#x3D;&quot;selection.hasValue() &amp;&amp; isAllSelected()&quot;
+                            [indeterminate]&#x3D;&quot;selection.hasValue() &amp;&amp; !isAllSelected()&quot;&gt;
+                        &lt;/mat-checkbox&gt;
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        &lt;mat-checkbox
+                            (click)&#x3D;&quot;$event.stopPropagation()&quot;
+                            (change)&#x3D;&quot;$event ? selection.toggle(row) : null&quot;
+                            [checked]&#x3D;&quot;selection.isSelected(row)&quot;&gt;
+                        &lt;/mat-checkbox&gt;
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        Name
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.name}}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;brewery&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        Brewery
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.brewery}}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;style&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        Style
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.style}}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;teir&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        Teir
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.teir | teirs}}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;numAvailable&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        No. Available
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.numAvailable}}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;packageSize&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        Package Size
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.packageSize | packageSize }}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;owner&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        Owner
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.owner}}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;desiredSwap&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        Wish to Swap For...
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.desiredSwap}}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;ng-container matColumnDef&#x3D;&quot;minTeirAccepted&quot;&gt;
+                    &lt;th
+                        mat-header-cell
+                        mat-sort-header
+                        *matHeaderCellDef&gt;
+                        Minimum Teir Accepted
+                    &lt;/th&gt;
+                    &lt;td
+                        mat-cell
+                        *matCellDef&#x3D;&quot;let row&quot;&gt;
+                        {{row.minTeirAccepted}}
+                    &lt;/td&gt;
+                &lt;/ng-container&gt;
+
+                &lt;!-- Header and Row Declarations --&gt;
+                &lt;tbody&gt;
+                    &lt;tr
+                        mat-header-row
+                        *matHeaderRowDef&#x3D;&quot;displayedColumns; sticky: true&quot;&gt;&lt;/tr&gt;
+                    &lt;tr
+                        mat-row
+                        *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;paginator-container&quot;&gt;
+            &lt;mat-paginator
+                class&#x3D;&quot;mat-elevation-z8 main-board-paginator&quot;
+                [pageSizeOptions]&#x3D;&quot;[5, 10, 15]&quot;
+                showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./main-board.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.main-board-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-board {
+    margin: 20px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+.main-board-table {
+    padding: 10px;
+    width: 100%;
+}
+
+.main-board-table-container {
+    display: flex;
+}
+
+.paginator-container {
+    display: flex;
+}
+
+.main-board-paginator {
+    width: 100%;
+}
+
+.mat-column-select {
+    overflow: initial;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding: 0 !important;
+}
+
+.board-toolbar-outer-container {
+    display: flex;
+}
+
+.board-toolbar-container-filter {
+    margin-left: auto;
+    width: 15%;
+}
+.board-toolbar-container-button {
+    width: 100px;
+    margin: 0 5px;
+    align-items: flex-end;
+    justify-items: flex-start;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="main-board-container">    <div class="main-board">        <div class="board-toolbar-outer-container">            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                (click)="onAddItem()">                <mat-icon class="material-icons">add_circle</mat-icon>                Add Item            </button>            <!-- *ngIf="showEditPostingBtn()" -->            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                *ngIf="false"                (click)="onEditItem()">                <mat-icon class="material-icons">edit</mat-icon>                Edit Posting            </button>            <!-- *ngIf="showEditPostingBtn()" -->            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                *ngIf="showProposeBtn()"                (click)="onProposeTrade()">                <mat-icon class="material-icons">pan_tool</mat-icon>                Propose Trade            </button>            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                *ngIf="showDeleteBtn()"                (click)="onDeleteItem(selection.selected)">                <mat-icon class="material-icons">delete</mat-icon>                Delete Item            </button>            <div class="board-toolbar-container-filter">                <mat-form-field>                    <input                        matInput                        (keyup)="applyFilter($event.target.value)"                        placeholder="Filter">                </mat-form-field>            </div>        </div>        <div class="main-board-table-container">            <table                #table                class="main-board-table mat-elevation-z8"                mat-table                matSort                [dataSource]="swapItemsDS">                <ng-container matColumnDef="select">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        <mat-checkbox                            (change)="$event ? masterToggle() : null"                            [checked]="selection.hasValue() && isAllSelected()"                            [indeterminate]="selection.hasValue() && !isAllSelected()">                        </mat-checkbox>                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        <mat-checkbox                            (click)="$event.stopPropagation()"                            (change)="$event ? selection.toggle(row) : null"                            [checked]="selection.isSelected(row)">                        </mat-checkbox>                    </td>                </ng-container>                <ng-container matColumnDef="name">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Name                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.name}}                    </td>                </ng-container>                <ng-container matColumnDef="brewery">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Brewery                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.brewery}}                    </td>                </ng-container>                <ng-container matColumnDef="style">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Style                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.style}}                    </td>                </ng-container>                <ng-container matColumnDef="teir">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Teir                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.teir | teirs}}                    </td>                </ng-container>                <ng-container matColumnDef="numAvailable">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        No. Available                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.numAvailable}}                    </td>                </ng-container>                <ng-container matColumnDef="packageSize">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Package Size                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.packageSize | packageSize }}                    </td>                </ng-container>                <ng-container matColumnDef="owner">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Owner                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.owner}}                    </td>                </ng-container>                <ng-container matColumnDef="desiredSwap">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Wish to Swap For...                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.desiredSwap}}                    </td>                </ng-container>                <ng-container matColumnDef="minTeirAccepted">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Minimum Teir Accepted                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.minTeirAccepted}}                    </td>                </ng-container>                <!-- Header and Row Declarations -->                <tbody>                    <tr                        mat-header-row                        *matHeaderRowDef="displayedColumns; sticky: true"></tr>                    <tr                        mat-row                        *matRowDef="let row; columns: displayedColumns;"></tr>                </tbody>            </table>        </div>        <div class="paginator-container">            <mat-paginator                class="mat-elevation-z8 main-board-paginator"                [pageSizeOptions]="[5, 10, 15]"                showFirstLastButtons></mat-paginator>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MainBoardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MainBoardComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

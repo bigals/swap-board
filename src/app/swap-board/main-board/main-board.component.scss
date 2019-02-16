@@ -1,0 +1,50 @@
+.main-board-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-board {
+    margin: 20px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+.main-board-table {
+    padding: 10px;
+    width: 100%;
+}
+
+.main-board-table-container {
+    display: flex;
+}
+
+.paginator-container {
+    display: flex;
+}
+
+.main-board-paginator {
+    width: 100%;
+}
+
+.mat-column-select {
+    overflow: initial;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding: 0 !important;
+}
+
+.board-toolbar-outer-container {
+    display: flex;
+}
+
+.board-toolbar-container-filter {
+    margin-left: auto;
+    width: 15%;
+}
+.board-toolbar-container-button {
+    width: 100px;
+    margin: 0 5px;
+    align-items: flex-end;
+    justify-items: flex-start;
+}

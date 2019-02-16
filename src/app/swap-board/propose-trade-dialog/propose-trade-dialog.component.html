@@ -1,0 +1,36 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+    <div *ngIf="data.ownedItems.length">
+        <mat-form-field class="propose-swap-dialog-field">
+            <label>Who are you swaping with</label>
+            <input matInput value="{{data.item.ownerDisplayName }}" disabled>
+        </mat-form-field>
+        <mat-form-field class="propose-swap-dialog-field">
+            <label>What item do you want</label>
+            <input matInput value="{{data.item.name}} | {{data.item.brewery}}" disabled>
+        </mat-form-field>
+        <mat-form-field class="propose-swap-dialog-field">
+            <label>Whos Offering the Swap</label>
+            <input matInput value="{{data.currentUserName}}" disabled>
+        </mat-form-field>
+        <mat-form-field class="propose-swap-dialog-field">
+            <label>What you are trading</label>
+            <mat-select [(ngModel)]="data.proposal.itemFromBy">
+                <mat-option *ngFor="let ownItem of data.ownedItems" value="{{ownItem.id}}">
+                    {{ownItem.name}} | {{ownItem.brewery}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div *ngIf="data.ownedItems.length === 0">
+        You have no beers to trade, please add some to the system
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" class="modal-btns" (click)="onCancel()">
+        Cancel
+    </button>
+    <button mat-raised-button color="primary" class="modal-btns" (click)="onCreate()" [disabled]="data.ownedItems.length === 0" cdkFocusInitial>
+        Propose Swap
+    </button>
+</div>

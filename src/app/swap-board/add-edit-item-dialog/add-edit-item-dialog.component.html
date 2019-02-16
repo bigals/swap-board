@@ -1,0 +1,191 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+    <div *ngIf="false">
+        <!-- <div *ngIf="data.isEdit"> -->
+
+        <mat-tab-group>
+            <mat-tab
+                *ngFor="let item of data.items"
+                label="{{item.id}} : {{item.name}}">
+                <!-- //owner - disabled -->
+                <mat-form-field class="example-full-width">
+                    <input
+                        matInput
+                        placeholder="You"
+                        value="item.owner"
+                        disabled>
+                </mat-form-field>
+                <!-- //name -->
+                <mat-form-field class="example-full-width">
+                    <input
+                        matInput
+                        placeholder="Beer Name"
+                        value="item.name">
+                </mat-form-field>
+                <!-- //brewery -->
+                <mat-form-field class="example-full-width">
+                    <input
+                        matInput
+                        placeholder="brewery"
+                        value="item.brewery">
+                </mat-form-field>
+
+                <!-- desiredSwap: string; -->
+                <mat-form-field class="example-full-width">
+                    <input
+                        matInput
+                        placeholder="Ideally want to swap for..."
+                        value="item.desiredSwap">
+                </mat-form-field>
+                <!-- teir: number;  disabled -->
+                <mat-form-field>
+                    <mat-select
+                        [(value)]="item.teir"
+                        disabled>
+                        <option
+                            *ngFor="let teir of teirs"
+                            value="teir.value">
+                            {{teir.label}}
+                        </option>
+                    </mat-select>
+                </mat-form-field>
+                <!-- style: string; -->
+                <mat-form-field class="example-full-width">
+                    <input
+                        matInput
+                        placeholder="Double IPA"
+                        value="item.style">
+                </mat-form-field>
+                <!-- minTeirAccepted: number; -->
+                <mat-form-field>
+                    <mat-select [(value)]="item.minTeirAccepted">
+                        <option
+                            *ngFor="let teir of teirs"
+                            value="teir.value">
+                            {{teir.label}}
+                        </option>
+                    </mat-select>
+                </mat-form-field>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+    <div *ngIf="!data.isEdit">
+        <!-- //owner -->
+        <mat-form-field class="item-input item-owner">
+            <label>Owner</label>
+            <input
+                matInput
+                disabled
+                [(ngModel)]="data.currentUserName">
+        </mat-form-field>
+        <!-- //name -->
+        <mat-form-field class="item-input item-name">
+            <input
+                matInput
+                placeholder="Beer Name"
+                [(ngModel)]="data.newItem.name">
+        </mat-form-field>
+        <!-- //brewery -->
+        <mat-form-field class="item-input item-brewery">
+            <input
+                matInput
+                placeholder="Brewery"
+                [(ngModel)]="data.newItem.brewery">
+        </mat-form-field>
+
+        <!-- style: string; -->
+        <mat-form-field class="item-input item-style">
+            <label>Style</label>
+            <input
+                matInput
+                [(ngModel)]="data.newItem.style">
+        </mat-form-field>
+
+        <mat-form-field class="item-input item-style">
+            <label>Container Size</label>
+            <mat-select [(ngModel)]="data.newItem.packageSize">
+                <mat-option
+                    *ngFor="let pSize of packageSizes"
+                    [(value)]="pSize.value">
+                    {{pSize.label}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <div class="item-double-input-row">
+            <!-- price: number; -->
+            <mat-form-field class="item-price">
+                <label>Price</label>
+                <input
+                    type="number"
+                    step=".01"
+                    matInput
+                    [(ngModel)]="data.newItem.price">
+            </mat-form-field>
+            <!-- priceDivisor: number; -->
+            <mat-form-field class="item-priceDivisor">
+                <label>Number Purchased</label>
+                <mat-select [(ngModel)]="data.newItem.priceDivisor">
+                    <mat-option
+                        *ngFor="let divisor of priceDivisors"
+                        [(value)]="divisor.value">
+                        {{divisor.label}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <!-- desiredSwap: string; -->
+        <mat-form-field class="item-input item-desiredSwap">
+            <input
+                matInput
+                placeholder="Ideally want to swap for..."
+                [(ngModel)]="data.newItem.desiredSwap">
+        </mat-form-field>
+
+        <!-- minTeirAccepted: number; -->
+        <mat-form-field class="item-input item-minTeir">
+            <label>Minimum Teir Ill Accept (optional)</label>
+            <mat-select [(ngModel)]="data.newItem.minTeirAccepted">
+                <mat-option
+                    *ngFor="let teir of teirs"
+                    [(value)]="teir.value">
+                    {{teir.label}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button
+        mat-raised-button
+        *ngIf="data.isEdit"
+        (click)="onCancel()">
+        Cancel
+    </button>
+    <button
+        mat-raised-button
+        *ngIf="data.isEdit"
+        [mat-dialog-close]="data.editedItems"
+        cdkFocusInitial>
+        Accept Edits
+    </button>
+
+    <button
+        mat-raised-button
+        color="primary"
+        class="modal-btns"
+        *ngIf="!data.isEdit"
+        (click)="onCancel()">
+        Cancel
+    </button>
+    <button
+        mat-raised-button
+        color="primary"
+        class="modal-btns"
+        *ngIf="!data.isEdit"
+        (click)="onAdd(data.newItem)"
+        cdkFocusInitial>
+        Post Item
+    </button>
+</div>

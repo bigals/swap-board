@@ -1,0 +1,65 @@
+<div class="profile-outer-container">
+    <div class="profile-image-container">
+        <div class="colElemSpacer"></div>
+        <img
+            class="user-image"
+            src="{{profile.image}}">
+        <button
+            mat-flat-button
+            style="margin: auto;"
+            (click)="onChangeUserImage()">
+            Change User Image
+        </button>
+    </div>
+    <div class="profile-form-container">
+        <div *ngIf="isEditing">
+            <button
+                class="board-toolbar-container-button"
+                mat-icon-button
+                color="primary"
+                (click)="onSubmitChanges()">
+                <mat-icon class="material-icons">save</mat-icon>
+                Save Changes
+            </button>
+            <mat-form-field class="profile-form-field">
+                <label>Display Name</label>
+                <input
+                    matInput
+                    disabled
+                    [(ngModel)]="profile.name">
+            </mat-form-field>
+            <mat-form-field class="profile-form-field">
+                <label>Account Type</label>
+                <input
+                    matInput
+                    [(value)]="profile.provider"
+                    disabled>
+            </mat-form-field>
+        </div>
+        <div *ngIf="!isEditing">
+            <button
+                class="board-toolbar-container-button"
+                mat-icon-button
+                color="primary"
+                (click)="onEditProfile()">
+                <mat-icon class="material-icons">edit</mat-icon>
+                Edit Profile
+            </button>
+            <mat-form-field class="profile-form-field">
+                <label>Display Name</label>
+                <input
+                    matInput
+                    [(value)]="profile.name"
+                    disabled>
+            </mat-form-field>
+            <mat-form-field class="profile-form-field">
+                <label>Account Type</label>
+                <input
+                    matInput
+                    [(value)]="profile.provider"
+                    disabled>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="profile-btn-container"></div>
+</div>
