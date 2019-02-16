@@ -306,16 +306,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            data
-                            </b>
+                            data</b>
                             <a href="#data"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>data:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -344,16 +337,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            dialogRef
-                            </b>
+                            dialogRef</b>
                             <a href="#dialogRef"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>dialogRef:     <code><a href="../components/AddEditItemDialogComponent.html" target="_self" >MatDialogRef&lt;AddEditItemDialogComponent&gt;</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -379,44 +365,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onAdd
-                            </b>
+                            onAdd</b>
                             <a href="#onAdd"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onAdd:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>newItem &#x3D;&gt; {
-    // tslint:disable-next-line:prefer-const
-    let returnItem: SwapItem &#x3D; newItem;
-    let pricePerOz: number &#x3D;
-      newItem.price / newItem.priceDivisor / newItem.packageSize;
-
-    // marked as seasonal gets you a 10 cent/oz bump to pPerO
-    pricePerOz &#x3D; newItem.isSeasonal ? pricePerOz + 0.1 : pricePerOz;
-
-    // &lt;0.15 teir 1, 0.16-0.70 teir 2, &gt;0.70 teir 3
-    returnItem.teir &#x3D; pricePerOz &gt;&#x3D; 0.71 ? 3 : pricePerOz &gt; 0.15 ? 2 : 1;
-
-    // Bump up a teir for one-off/ non-yearly beers
-    if (newItem.isLimitedRlease) {
-      returnItem.teir +&#x3D; 1;
-    }
-
-    this.dialogRef.close(returnItem);
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/swap-board/add-edit-item-dialog/add-edit-item-dialog.component.ts:76</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/swap-board/add-edit-item-dialog/add-edit-item-dialog.component.ts:77</a></div>
                             </td>
                         </tr>
 
@@ -431,28 +392,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onCancel
-                            </b>
+                            onCancel</b>
                             <a href="#onCancel"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onCancel:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.dialogRef.close();
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/app/swap-board/add-edit-item-dialog/add-edit-item-dialog.component.ts:95</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/swap-board/add-edit-item-dialog/add-edit-item-dialog.component.ts:96</a></div>
                             </td>
                         </tr>
 
@@ -467,16 +419,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            packageSizes
-                            </b>
+                            packageSizes</b>
                             <a href="#packageSizes"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>packageSizes:     <code>literal type[]</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -502,16 +447,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            priceDivisors
-                            </b>
+                            priceDivisors</b>
                             <a href="#priceDivisors"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>priceDivisors:     <code>literal type[]</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -537,16 +475,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            teirs
-                            </b>
+                            teirs</b>
                             <a href="#teirs"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>teirs:     <code>literal type[]</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -631,21 +562,22 @@ export class AddEditItemDialogComponent implements OnInit {
 
   ngOnInit() {
     this.data.newItem &#x3D; {
-      id: this.data.nextId,
-      owner: this.data.currentUserName,
+      owner: this.data.currentUser,
+      ownerDisplayName: this.data.currentUserName,
       name: &#x27;&#x27;,
       brewery: &#x27;&#x27;,
-      packageSize: 121,
-      numAvailable: 0,
+      packageSize: 12,
+      numAvailable: 1,
       desiredSwap: &#x27;&#x27;,
       price: null,
       priceDivisor: 4,
       style: &#x27;&#x27;,
-      minTeirAccepted: null
+      minTeirAccepted: null,
+      status: &#x27;available&#x27;
     };
   }
 
-  public onAdd &#x3D; newItem &#x3D;&gt; {
+  public onAdd &#x3D; (newItem) &#x3D;&gt; {
     // tslint:disable-next-line:prefer-const
     let returnItem: SwapItem &#x3D; newItem;
     let pricePerOz: number &#x3D;
@@ -676,6 +608,7 @@ export class AddEditItemDialogComponent implements OnInit {
 &lt;div mat-dialog-content&gt;
     &lt;div *ngIf&#x3D;&quot;false&quot;&gt;
         &lt;!-- &lt;div *ngIf&#x3D;&quot;data.isEdit&quot;&gt; --&gt;
+
         &lt;mat-tab-group&gt;
             &lt;mat-tab
                 *ngFor&#x3D;&quot;let item of data.items&quot;
@@ -701,15 +634,6 @@ export class AddEditItemDialogComponent implements OnInit {
                         matInput
                         placeholder&#x3D;&quot;brewery&quot;
                         value&#x3D;&quot;item.brewery&quot;&gt;
-                &lt;/mat-form-field&gt;
-                &lt;!-- numAvailable: number; --&gt;
-                &lt;mat-form-field class&#x3D;&quot;example-full-width&quot;&gt;
-                    &lt;input
-                        type&#x3D;&quot;number&quot;
-                        step&#x3D;&quot;1&quot;
-                        matInput
-                        placeholder&#x3D;&quot;1&quot;
-                        value&#x3D;&quot;item.numAvailable&quot;&gt;
                 &lt;/mat-form-field&gt;
 
                 &lt;!-- desiredSwap: string; --&gt;
@@ -783,28 +707,16 @@ export class AddEditItemDialogComponent implements OnInit {
                 [(ngModel)]&#x3D;&quot;data.newItem.style&quot;&gt;
         &lt;/mat-form-field&gt;
 
-        &lt;div class&#x3D;&quot;item-double-input-row&quot;&gt;
-            &lt;!-- numAvailable: number; --&gt;
-            &lt;mat-form-field class&#x3D;&quot;item-numAvailable&quot;&gt;
-                &lt;label&gt;Number To Swap&lt;/label&gt;
-                &lt;input
-                    type&#x3D;&quot;number&quot;
-                    step&#x3D;&quot;1&quot;
-                    matInput
-                    [(ngModel)]&#x3D;&quot;data.newItem.numAvailable&quot;&gt;
-            &lt;/mat-form-field&gt;
-            &lt;!-- packageSize: string; --&gt;
-            &lt;mat-form-field class&#x3D;&quot;item-packageSize&quot;&gt;
-                &lt;label&gt;Container Size&lt;/label&gt;
-                &lt;mat-select [(ngModel)]&#x3D;&quot;data.newItem.packageSize&quot;&gt;
-                    &lt;mat-option
-                        *ngFor&#x3D;&quot;let pSize of packageSizes&quot;
-                        [(value)]&#x3D;&quot;pSize.value&quot;&gt;
-                        {{pSize.label}}
-                    &lt;/mat-option&gt;
-                &lt;/mat-select&gt;
-            &lt;/mat-form-field&gt;
-        &lt;/div&gt;
+        &lt;mat-form-field class&#x3D;&quot;item-input item-style&quot;&gt;
+            &lt;label&gt;Container Size&lt;/label&gt;
+            &lt;mat-select [(ngModel)]&#x3D;&quot;data.newItem.packageSize&quot;&gt;
+                &lt;mat-option
+                    *ngFor&#x3D;&quot;let pSize of packageSizes&quot;
+                    [(value)]&#x3D;&quot;pSize.value&quot;&gt;
+                    {{pSize.label}}
+                &lt;/mat-option&gt;
+            &lt;/mat-select&gt;
+        &lt;/mat-form-field&gt;
 
         &lt;div class&#x3D;&quot;item-double-input-row&quot;&gt;
             &lt;!-- price: number; --&gt;
@@ -975,8 +887,8 @@ export class AddEditItemDialogComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>{{data.title}}</h1><div mat-dialog-content>    <div *ngIf="false">        <!-- <div *ngIf="data.isEdit"> -->        <mat-tab-group>            <mat-tab                *ngFor="let item of data.items"                label="{{item.id}} : {{item.name}}">                <!-- //owner - disabled -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="You"                        value="item.owner"                        disabled>                </mat-form-field>                <!-- //name -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="Beer Name"                        value="item.name">                </mat-form-field>                <!-- //brewery -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="brewery"                        value="item.brewery">                </mat-form-field>                <!-- numAvailable: number; -->                <mat-form-field class="example-full-width">                    <input                        type="number"                        step="1"                        matInput                        placeholder="1"                        value="item.numAvailable">                </mat-form-field>                <!-- desiredSwap: string; -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="Ideally want to swap for..."                        value="item.desiredSwap">                </mat-form-field>                <!-- teir: number;  disabled -->                <mat-form-field>                    <mat-select                        [(value)]="item.teir"                        disabled>                        <option                            *ngFor="let teir of teirs"                            value="teir.value">                            {{teir.label}}                        </option>                    </mat-select>                </mat-form-field>                <!-- style: string; -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="Double IPA"                        value="item.style">                </mat-form-field>                <!-- minTeirAccepted: number; -->                <mat-form-field>                    <mat-select [(value)]="item.minTeirAccepted">                        <option                            *ngFor="let teir of teirs"                            value="teir.value">                            {{teir.label}}                        </option>                    </mat-select>                </mat-form-field>            </mat-tab>        </mat-tab-group>    </div>    <div *ngIf="!data.isEdit">        <!-- //owner -->        <mat-form-field class="item-input item-owner">            <label>Owner</label>            <input                matInput                disabled                [(ngModel)]="data.currentUserName">        </mat-form-field>        <!-- //name -->        <mat-form-field class="item-input item-name">            <input                matInput                placeholder="Beer Name"                [(ngModel)]="data.newItem.name">        </mat-form-field>        <!-- //brewery -->        <mat-form-field class="item-input item-brewery">            <input                matInput                placeholder="Brewery"                [(ngModel)]="data.newItem.brewery">        </mat-form-field>        <!-- style: string; -->        <mat-form-field class="item-input item-style">            <label>Style</label>            <input                matInput                [(ngModel)]="data.newItem.style">        </mat-form-field>        <div class="item-double-input-row">            <!-- numAvailable: number; -->            <mat-form-field class="item-numAvailable">                <label>Number To Swap</label>                <input                    type="number"                    step="1"                    matInput                    [(ngModel)]="data.newItem.numAvailable">            </mat-form-field>            <!-- packageSize: string; -->            <mat-form-field class="item-packageSize">                <label>Container Size</label>                <mat-select [(ngModel)]="data.newItem.packageSize">                    <mat-option                        *ngFor="let pSize of packageSizes"                        [(value)]="pSize.value">                        {{pSize.label}}                    </mat-option>                </mat-select>            </mat-form-field>        </div>        <div class="item-double-input-row">            <!-- price: number; -->            <mat-form-field class="item-price">                <label>Price</label>                <input                    type="number"                    step=".01"                    matInput                    [(ngModel)]="data.newItem.price">            </mat-form-field>            <!-- priceDivisor: number; -->            <mat-form-field class="item-priceDivisor">                <label>Number Purchased</label>                <mat-select [(ngModel)]="data.newItem.priceDivisor">                    <mat-option                        *ngFor="let divisor of priceDivisors"                        [(value)]="divisor.value">                        {{divisor.label}}                    </mat-option>                </mat-select>            </mat-form-field>        </div>        <!-- desiredSwap: string; -->        <mat-form-field class="item-input item-desiredSwap">            <input                matInput                placeholder="Ideally want to swap for..."                [(ngModel)]="data.newItem.desiredSwap">        </mat-form-field>        <!-- minTeirAccepted: number; -->        <mat-form-field class="item-input item-minTeir">            <label>Minimum Teir Ill Accept (optional)</label>            <mat-select [(ngModel)]="data.newItem.minTeirAccepted">                <mat-option                    *ngFor="let teir of teirs"                    [(value)]="teir.value">                    {{teir.label}}                </mat-option>            </mat-select>        </mat-form-field>    </div></div><div mat-dialog-actions>    <button        mat-raised-button        *ngIf="data.isEdit"        (click)="onCancel()">        Cancel    </button>    <button        mat-raised-button        *ngIf="data.isEdit"        [mat-dialog-close]="data.editedItems"        cdkFocusInitial>        Accept Edits    </button>    <button        mat-raised-button        color="primary"        class="modal-btns"        *ngIf="!data.isEdit"        (click)="onCancel()">        Cancel    </button>    <button        mat-raised-button        color="primary"        class="modal-btns"        *ngIf="!data.isEdit"        (click)="onAdd(data.newItem)"        cdkFocusInitial>        Post Item    </button></div></div>'
-    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
+        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>{{data.title}}</h1><div mat-dialog-content>    <div *ngIf="false">        <!-- <div *ngIf="data.isEdit"> -->        <mat-tab-group>            <mat-tab                *ngFor="let item of data.items"                label="{{item.id}} : {{item.name}}">                <!-- //owner - disabled -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="You"                        value="item.owner"                        disabled>                </mat-form-field>                <!-- //name -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="Beer Name"                        value="item.name">                </mat-form-field>                <!-- //brewery -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="brewery"                        value="item.brewery">                </mat-form-field>                <!-- desiredSwap: string; -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="Ideally want to swap for..."                        value="item.desiredSwap">                </mat-form-field>                <!-- teir: number;  disabled -->                <mat-form-field>                    <mat-select                        [(value)]="item.teir"                        disabled>                        <option                            *ngFor="let teir of teirs"                            value="teir.value">                            {{teir.label}}                        </option>                    </mat-select>                </mat-form-field>                <!-- style: string; -->                <mat-form-field class="example-full-width">                    <input                        matInput                        placeholder="Double IPA"                        value="item.style">                </mat-form-field>                <!-- minTeirAccepted: number; -->                <mat-form-field>                    <mat-select [(value)]="item.minTeirAccepted">                        <option                            *ngFor="let teir of teirs"                            value="teir.value">                            {{teir.label}}                        </option>                    </mat-select>                </mat-form-field>            </mat-tab>        </mat-tab-group>    </div>    <div *ngIf="!data.isEdit">        <!-- //owner -->        <mat-form-field class="item-input item-owner">            <label>Owner</label>            <input                matInput                disabled                [(ngModel)]="data.currentUserName">        </mat-form-field>        <!-- //name -->        <mat-form-field class="item-input item-name">            <input                matInput                placeholder="Beer Name"                [(ngModel)]="data.newItem.name">        </mat-form-field>        <!-- //brewery -->        <mat-form-field class="item-input item-brewery">            <input                matInput                placeholder="Brewery"                [(ngModel)]="data.newItem.brewery">        </mat-form-field>        <!-- style: string; -->        <mat-form-field class="item-input item-style">            <label>Style</label>            <input                matInput                [(ngModel)]="data.newItem.style">        </mat-form-field>        <mat-form-field class="item-input item-style">            <label>Container Size</label>            <mat-select [(ngModel)]="data.newItem.packageSize">                <mat-option                    *ngFor="let pSize of packageSizes"                    [(value)]="pSize.value">                    {{pSize.label}}                </mat-option>            </mat-select>        </mat-form-field>        <div class="item-double-input-row">            <!-- price: number; -->            <mat-form-field class="item-price">                <label>Price</label>                <input                    type="number"                    step=".01"                    matInput                    [(ngModel)]="data.newItem.price">            </mat-form-field>            <!-- priceDivisor: number; -->            <mat-form-field class="item-priceDivisor">                <label>Number Purchased</label>                <mat-select [(ngModel)]="data.newItem.priceDivisor">                    <mat-option                        *ngFor="let divisor of priceDivisors"                        [(value)]="divisor.value">                        {{divisor.label}}                    </mat-option>                </mat-select>            </mat-form-field>        </div>        <!-- desiredSwap: string; -->        <mat-form-field class="item-input item-desiredSwap">            <input                matInput                placeholder="Ideally want to swap for..."                [(ngModel)]="data.newItem.desiredSwap">        </mat-form-field>        <!-- minTeirAccepted: number; -->        <mat-form-field class="item-input item-minTeir">            <label>Minimum Teir Ill Accept (optional)</label>            <mat-select [(ngModel)]="data.newItem.minTeirAccepted">                <mat-option                    *ngFor="let teir of teirs"                    [(value)]="teir.value">                    {{teir.label}}                </mat-option>            </mat-select>        </mat-form-field>    </div></div><div mat-dialog-actions>    <button        mat-raised-button        *ngIf="data.isEdit"        (click)="onCancel()">        Cancel    </button>    <button        mat-raised-button        *ngIf="data.isEdit"        [mat-dialog-close]="data.editedItems"        cdkFocusInitial>        Accept Edits    </button>    <button        mat-raised-button        color="primary"        class="modal-btns"        *ngIf="!data.isEdit"        (click)="onCancel()">        Cancel    </button>    <button        mat-raised-button        color="primary"        class="modal-btns"        *ngIf="!data.isEdit"        (click)="onAdd(data.newItem)"        cdkFocusInitial>        Post Item    </button></div></div>'
+    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AdminBeersComponent', 'selector': 'admin-beers'},{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AdminProposalsComponent', 'selector': 'admin-proposals'},{'name': 'AdminUsersComponent', 'selector': 'admin-users'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AddEditItemDialogComponent'};
 </script>

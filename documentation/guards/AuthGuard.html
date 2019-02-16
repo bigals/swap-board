@@ -252,11 +252,15 @@ export class AuthGuard implements CanActivate {
       this.userService
         .getCurrentUser()
         .then(user &#x3D;&gt; {
-          this.router.navigate([&#x27;/swap-board&#x27;]);
-          return resolve(false);
+          if (user) {
+            this.router.navigate([&#x27;/swap-board&#x27;]);
+            return resolve(false);
+          } else {
+            return resolve(true);
+          }
         })
         .catch(err &#x3D;&gt; {
-          return resolve(true);
+          console.log(err);
         });
     });
   }

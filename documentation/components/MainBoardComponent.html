@@ -71,6 +71,7 @@
     </p>
     <p class="comment">
                 <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
     </p>
 
 
@@ -135,7 +136,19 @@
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#currentUserName">currentUserName</a>
+                                <a href="#availableSelection">availableSelection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#availableSwapItemsDS">availableSwapItemsDS</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#currentUid">currentUid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#currentUsername">currentUsername</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
@@ -182,7 +195,11 @@
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#selection">selection</a>
+                                <a href="#pendingSelection">pendingSelection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#pendingSwapItemsDS">pendingSwapItemsDS</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
@@ -205,13 +222,6 @@
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#swapItemsDS">swapItemsDS</a>
-                            </li>
-                            <li>
-                                <a href="#table">table</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Public</span>
                                 <a href="#title">title</a>
                             </li>
                             <li>
@@ -220,7 +230,7 @@
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#userPictureSrc">userPictureSrc</a>
+                                <a href="#userService">userService</a>
                             </li>
                         </ul>
                     </td>
@@ -234,6 +244,9 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
                             </li>
@@ -255,12 +268,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, boardService: <a href="../injectables/BoardService.html">BoardService</a>, matDialog: MatDialog)</code>
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, boardService: <a href="../injectables/BoardService.html">BoardService</a>, matDialog: MatDialog, userService: <a href="../injectables/UserService.html">UserService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:33</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:43</a></div>
                             </td>
                         </tr>
 
@@ -313,6 +326,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -335,6 +360,44 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
+                        <a name="ngAfterViewInit"></a>
+                        <span class="name">
+                            <b>
+                            ngAfterViewInit
+                            </b>
+                            <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:97</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
                         <a name="ngOnInit"></a>
                         <span class="name">
                             <b>
@@ -353,7 +416,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:54</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:65</a></div>
                             </td>
                         </tr>
 
@@ -384,132 +447,14 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            applyFilter
-                            </b>
+                            applyFilter</b>
                             <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>applyFilter:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>(inputVal: string) &#x3D;&gt; {
-    this.swapItemsDS.filter &#x3D; inputVal.trim().toLowerCase();
-  }</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:76</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="currentUserName"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Public</span>
-                            currentUserName
-                            </b>
-                            <a href="#currentUserName"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>currentUserName:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:30</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="displayedColumns"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Public</span>
-                            displayedColumns
-                            </b>
-                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>displayedColumns:     <code>string[]</code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code>string[]</code>
-
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:26</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getNextId"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
-                            getNextId
-                            </b>
-                            <a href="#getNextId"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>getNextId:     <code></code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.swapItemsDS.data.sort((item1, item2) &#x3D;&gt; {
-      return item1.id - item2.id;
-    });
-    return this.swapItemsDS.data[this.swapItemsDS.data.length - 1].id++;
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
@@ -525,34 +470,190 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="isAllSelected"></a>
+                        <a name="availableSelection"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            isAllSelected
-                            </b>
-                            <a href="#isAllSelected"><span class="icon ion-ios-link"></span></a>
+                            availableSelection</b>
+                            <a href="#availableSelection"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>isAllSelected:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    const numSelected &#x3D; this.selection.selected.length;
-    const numRows &#x3D; this.swapItemsDS.data.length;
-    return numSelected &#x3D;&#x3D;&#x3D; numRows;
-  }</code>
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:63</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="availableSwapItemsDS"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            availableSwapItemsDS</b>
+                            <a href="#availableSwapItemsDS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/SwapItem.html" target="_self" >MatTableDataSource&lt;SwapItem&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUid"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            currentUid</b>
+                            <a href="#currentUid"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUsername"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            currentUsername</b>
+                            <a href="#currentUsername"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getNextId"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            getNextId</b>
+                            <a href="#getNextId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="189" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:189</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isAllSelected"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            isAllSelected</b>
+                            <a href="#isAllSelected"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:98</a></div>
                             </td>
                         </tr>
 
@@ -567,33 +668,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            isASelectionOwnedByUser
-                            </b>
+                            isASelectionOwnedByUser</b>
                             <a href="#isASelectionOwnedByUser"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>isASelectionOwnedByUser:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>selects &#x3D;&gt; {
-    for (const item of selects.selected) {
-      if (item.owner &#x3D;&#x3D;&#x3D; this.currentUserName) {
-        return true;
-      }
-    }
-    return false;
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:100</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:162</a></div>
                             </td>
                         </tr>
 
@@ -608,33 +695,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            isAtleastOneUnOwnedSelection
-                            </b>
+                            isAtleastOneUnOwnedSelection</b>
                             <a href="#isAtleastOneUnOwnedSelection"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>isAtleastOneUnOwnedSelection:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>selects &#x3D;&gt; {
-    for (const item of selects.selected) {
-      if (item.owner !&#x3D;&#x3D; this.currentUserName) {
-        return true;
-      }
-    }
-    return false;
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:108</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="170" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:170</a></div>
                             </td>
                         </tr>
 
@@ -649,30 +722,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            masterToggle
-                            </b>
+                            masterToggle</b>
                             <a href="#masterToggle"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>masterToggle:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.isAllSelected()
-      ? this.selection.clear()
-      : this.swapItemsDS.data.forEach(row &#x3D;&gt; this.selection.select(row));
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:70</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:111</a></div>
                             </td>
                         </tr>
 
@@ -693,52 +755,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onAddItem
-                            </b>
+                            onAddItem</b>
                             <a href="#onAddItem"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onAddItem:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.matDialog
-      .open(AddEditItemDialogComponent, {
-        width: &#x27;35vw&#x27;,
-        data: {
-          title: &#x27;Add Item&#x27;,
-          isEdit: false,
-          currentUserName: this.currentUserName,
-          // tslint:disable-next-line:arrow-return-shorthand
-          nextId: this.getNextId()
-        }
-      })
-      .afterClosed()
-      .subscribe(result &#x3D;&gt; {
-        if (result) {
-          this.boardService.addItem(result);
-          // this.swapItemsDS.data.push(result);
-          this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
-            this.swapItemsDS.data
-          );
-          this.swapItemsDS.paginator &#x3D; this.paginator;
-          this.swapItemsDS.sort &#x3D; this.sort;
-
-          this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
-        }
-      });
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:156</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="220" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:220</a></div>
                             </td>
                         </tr>
 
@@ -753,47 +782,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onDeleteItem
-                            </b>
+                            onDeleteItem</b>
                             <a href="#onDeleteItem"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onDeleteItem:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>selected &#x3D;&gt; {
-    if (selected.length &#x3D;&#x3D;&#x3D; 1) {
-      this.boardService.deleteItem(selected.id);
-      for (let i &#x3D; 0; i &lt; this.swapItemsDS.data.length; i++) {
-        if (selected[0].id &#x3D;&#x3D;&#x3D; this.swapItemsDS.data[i].id) {
-          this.swapItemsDS.data.splice(i, 1);
-          this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
-            this.swapItemsDS.data
-          );
-          this.swapItemsDS.paginator &#x3D; this.paginator;
-          this.swapItemsDS.sort &#x3D; this.sort;
-
-          this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
-        }
-      }
-    } else {
-      // must select only one item to delete at a time
-      window.alert(
-        &#x27;Please select only one item to delete at a time; Also you may only delete your posted items&#x27;
-      );
-    }
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:134</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:198</a></div>
                             </td>
                         </tr>
 
@@ -808,42 +809,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onEditItem
-                            </b>
+                            onEditItem</b>
                             <a href="#onEditItem"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onEditItem:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.matDialog
-      .open(AddEditItemDialogComponent, {
-        width: &#x27;250px&#x27;,
-        data: {
-          title: &#x27;Edit Item(s)&#x27;,
-          isEdit: true,
-          items: this.selection.selected.filter((item, index) &#x3D;&gt; {
-            return item.owner &#x3D;&#x3D;&#x3D; this.currentUserName;
-          })
-        }
-      })
-      .afterClosed()
-      .subscribe(result &#x3D;&gt; {
-        this.updateItems(result);
-      });
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:183</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="249" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:249</a></div>
                             </td>
                         </tr>
 
@@ -858,47 +836,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onProposeTrade
-                            </b>
+                            onProposeTrade</b>
                             <a href="#onProposeTrade"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onProposeTrade:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    const dialogRef &#x3D; this.matDialog.open(ProposeTradeDialogComponent, {
-      width: &#x27;250px&#x27;,
-      data: {
-        title: &#x27;Propose Trade&#x27;,
-        items: this.selection.selected.filter((item, index) &#x3D;&gt; {
-          return item.owner !&#x3D;&#x3D; this.currentUserName;
-        }),
-        ownedItems: this.swapItems.filter((item, index) &#x3D;&gt; {
-          return item.owner &#x3D;&#x3D;&#x3D; this.currentUserName;
-        })
-      }
-    });
-
-    dialogRef.afterClosed().subscribe(result &#x3D;&gt; {
-      const proposals &#x3D; result;
-      console.log(proposals);
-      // remove proposals from main board (mark them pending trade)
-      // Write new proposals to database
-      // ??refresh grid??
-    });
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="200" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:200</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="266" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:266</a></div>
                             </td>
                         </tr>
 
@@ -912,22 +862,14 @@
                         <a name="paginator"></a>
                         <span class="name">
                             <b>
-                            paginator
-                            </b>
+                            paginator</b>
                             <a href="#paginator"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>paginator:     <code>MatPaginator</code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code>MatPaginator</code>
-
+                            <i>Default value : </i><code>new QueryList&lt;MatPaginator&gt;()</code>
                         </td>
                     </tr>
                     <tr>
@@ -935,13 +877,13 @@
                             <b>Decorators : </b>
                             <br />
                             <code>
-                                @ViewChild(MatPaginator)<br />
+                                @ViewChildren(MatPaginator)<br />
                             </code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:31</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:42</a></div>
                             </td>
                         </tr>
 
@@ -952,20 +894,13 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="selection"></a>
+                        <a name="pendingSelection"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            selection
-                            </b>
-                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
+                            pendingSelection</b>
+                            <a href="#pendingSelection"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>selection:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -976,7 +911,35 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:29</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pendingSwapItemsDS"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            pendingSwapItemsDS</b>
+                            <a href="#pendingSwapItemsDS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/SwapItem.html" target="_self" >MatTableDataSource&lt;SwapItem&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:37</a></div>
                             </td>
                         </tr>
 
@@ -991,31 +954,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            showDeleteBtn
-                            </b>
+                            showDeleteBtn</b>
                             <a href="#showDeleteBtn"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>showDeleteBtn:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    return (
-      this.selection.selected.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp;
-      this.selection.selected[0].owner &#x3D;&#x3D;&#x3D; this.currentUserName
-    );
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:86</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="143" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:143</a></div>
                             </td>
                         </tr>
 
@@ -1030,31 +981,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            showEditPostingBtn
-                            </b>
+                            showEditPostingBtn</b>
                             <a href="#showEditPostingBtn"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>showEditPostingBtn:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    return (
-      this.selection.selected.length &amp;&amp;
-      this.isASelectionOwnedByUser(this.selection)
-    );
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:80</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:135</a></div>
                             </td>
                         </tr>
 
@@ -1069,31 +1008,19 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            showProposeBtn
-                            </b>
+                            showProposeBtn</b>
                             <a href="#showProposeBtn"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>showProposeBtn:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    return (
-      this.selection.selected.length &amp;&amp;
-      this.isAtleastOneUnOwnedSelection(this.selection)
-    );
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:93</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:152</a></div>
                             </td>
                         </tr>
 
@@ -1107,22 +1034,14 @@
                         <a name="sort"></a>
                         <span class="name">
                             <b>
-                            sort
-                            </b>
+                            sort</b>
                             <a href="#sort"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>sort:     <code>MatSort</code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code>MatSort</code>
-
+                            <i>Default value : </i><code>new QueryList&lt;MatSort&gt;()</code>
                         </td>
                     </tr>
                     <tr>
@@ -1130,13 +1049,13 @@
                             <b>Decorators : </b>
                             <br />
                             <code>
-                                @ViewChild(MatSort)<br />
+                                @ViewChildren(MatSort)<br />
                             </code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:43</a></div>
                             </td>
                         </tr>
 
@@ -1151,27 +1070,20 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            swapItems
-                            </b>
+                            swapItems</b>
                             <a href="#swapItems"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>swapItems:     <code><a href="../interfaces/SwapItem.html" target="_self" >SwapItem[]</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../interfaces/SwapItem.html" target="_self" >SwapItem[]</a></code>
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:35</a></div>
                             </td>
                         </tr>
 
@@ -1182,69 +1094,19 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="swapItemsDS"></a>
+                        <a name="title"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            swapItemsDS
-                            </b>
-                            <a href="#swapItemsDS"><span class="icon ion-ios-link"></span></a>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>swapItemsDS:     <code><a href="../interfaces/SwapItem.html" target="_self" >MatTableDataSource&lt;SwapItem&gt;</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../interfaces/SwapItem.html" target="_self" >MatTableDataSource&lt;SwapItem&gt;</a></code>
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:28</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="table"></a>
-                        <span class="name">
-                            <b>
-                            table
-                            </b>
-                            <a href="#table"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>table:     <code>MatTable&lt;any&gt;</code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code>MatTable&lt;any&gt;</code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <b>Decorators : </b>
-                            <br />
-                            <code>
-                                @ViewChild(MatTable)<br />
-                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -1260,73 +1122,23 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="title"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Public</span>
-                            title
-                            </b>
-                            <a href="#title"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>title:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:24</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
                         <a name="updateItems"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            updateItems
-                            </b>
+                            updateItems</b>
                             <a href="#updateItems"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>updateItems:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>updatedItems &#x3D;&gt; {
-    for (const updatedItem of updatedItems) {
-      for (let item of this.swapItemsDS.data) {
-        if (item.id &#x3D;&#x3D;&#x3D; updatedItem.id) {
-          item &#x3D; updatedItem;
-        }
-      }
-    }
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:117</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="179" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:179</a></div>
                             </td>
                         </tr>
 
@@ -1337,31 +1149,24 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="userPictureSrc"></a>
+                        <a name="userService"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            userPictureSrc
-                            </b>
-                            <a href="#userPictureSrc"><span class="icon ion-ios-link"></span></a>
+                            userService</b>
+                            <a href="#userService"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>userPictureSrc:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                            <i>Type : </i>    <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
 
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:25</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/swap-board/main-board/main-board.component.ts:49</a></div>
                             </td>
                         </tr>
 
@@ -1374,7 +1179,14 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  OnInit,
+  ViewChild,
+  QueryList,
+  ViewChildren,
+  AfterViewInit
+} from &#x27;@angular/core&#x27;;
 import { ActivatedRoute } from &#x27;@angular/router&#x27;;
 import { SelectionModel } from &#x27;@angular/cdk/collections&#x27;;
 import {
@@ -1390,28 +1202,32 @@ import {
 import { SwapItem, BoardService } from &#x27;../../core/services/board.service&#x27;;
 import { AddEditItemDialogComponent } from &#x27;../add-edit-item-dialog/add-edit-item-dialog.component&#x27;;
 import { ProposeTradeDialogComponent } from &#x27;../propose-trade-dialog/propose-trade-dialog.component&#x27;;
+import { Proposal } from &#x27;src/app/core/services/proposal.service&#x27;;
+import { UserService } from &#x27;src/app/core/services/user.service&#x27;;
 
 @Component({
   selector: &#x27;app-main-board&#x27;,
   templateUrl: &#x27;./main-board.component.html&#x27;,
   styleUrls: [&#x27;./main-board.component.scss&#x27;]
 })
-export class MainBoardComponent implements OnInit {
+export class MainBoardComponent implements OnInit, AfterViewInit {
   public title: string;
-  public userPictureSrc: string;
   public displayedColumns: string[];
-  public swapItems: SwapItem[];
-  public swapItemsDS: MatTableDataSource&lt;SwapItem&gt;;
-  public selection: any;
-  public currentUserName: string;
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatTable) table: MatTable&lt;any&gt;;
+  public swapItems: any;
+  public availableSwapItemsDS: MatTableDataSource&lt;SwapItem&gt;;
+  public pendingSwapItemsDS: MatTableDataSource&lt;SwapItem&gt;;
+  public availableSelection: any;
+  public pendingSelection: any;
+  public currentUid: string;
+  public currentUsername: string;
+  @ViewChildren(MatPaginator) paginator &#x3D; new QueryList&lt;MatPaginator&gt;();
+  @ViewChildren(MatSort) sort &#x3D; new QueryList&lt;MatSort&gt;();
 
   constructor(
     private route: ActivatedRoute,
     private boardService: BoardService,
-    private matDialog: MatDialog
+    private matDialog: MatDialog,
+    public userService: UserService
   ) {
     this.displayedColumns &#x3D; [
       &#x27;select&#x27;,
@@ -1421,61 +1237,112 @@ export class MainBoardComponent implements OnInit {
       &#x27;teir&#x27;,
       &#x27;numAvailable&#x27;,
       &#x27;packageSize&#x27;,
-      &#x27;owner&#x27;,
+      &#x27;ownerDisplayName&#x27;,
       &#x27;desiredSwap&#x27;,
       &#x27;minTeirAccepted&#x27;
     ];
   }
 
   ngOnInit() {
-    this.currentUserName &#x3D; this.route.snapshot.data.data.name;
-    this.swapItems &#x3D; this.boardService.getAllItems();
-    this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(this.swapItems);
-    this.swapItemsDS.paginator &#x3D; this.paginator;
-    this.swapItemsDS.sort &#x3D; this.sort;
+    this.boardService.getAllItems().subscribe(result &#x3D;&gt; {
+      this.swapItems &#x3D; result.map(elem &#x3D;&gt; {
+        return {
+          id: elem.payload.doc.id,
+          ...elem.payload.doc.data()
+        } as SwapItem;
+      });
 
-    this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+      this.availableSwapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+        this.swapItems.filter((item, index) &#x3D;&gt; {
+          return item.status !&#x3D;&#x3D; &#x27;pending&#x27;;
+        })
+      );
+      this.pendingSwapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+        this.swapItems.filter((item, index) &#x3D;&gt; {
+          return item.status &#x3D;&#x3D;&#x3D; &#x27;pending&#x27;;
+        })
+      );
+      this.availableSelection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+      this.pendingSelection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+
+      this.availableSwapItemsDS.paginator &#x3D; this.paginator.toArray()[0];
+      this.availableSwapItemsDS.sort &#x3D; this.sort.toArray()[0];
+      this.pendingSwapItemsDS.paginator &#x3D; this.paginator.toArray()[1];
+      this.pendingSwapItemsDS.sort &#x3D; this.sort.toArray()[1];
+
+      this.currentUid &#x3D; this.route.snapshot.data.data.uid;
+      this.currentUsername &#x3D; this.route.snapshot.data.data.name;
+    });
   }
-  public isAllSelected &#x3D; () &#x3D;&gt; {
-    const numSelected &#x3D; this.selection.selected.length;
-    const numRows &#x3D; this.swapItemsDS.data.length;
-    return numSelected &#x3D;&#x3D;&#x3D; numRows;
+
+  ngAfterViewInit() {}
+  public isAllSelected &#x3D; (whichGrid?: string) &#x3D;&gt; {
+    if (whichGrid &amp;&amp; whichGrid &#x3D;&#x3D;&#x3D; &#x27;pending&#x27; &amp;&amp; this.pendingSelection) {
+      const numSelected &#x3D; this.pendingSelection.selected.length;
+      const numRows &#x3D; this.pendingSwapItemsDS.data.length;
+      return numSelected &#x3D;&#x3D;&#x3D; numRows;
+    } else {
+      const numSelected &#x3D; this.availableSelection.selected.length;
+      const numRows &#x3D; this.availableSwapItemsDS.data.length;
+      return numSelected &#x3D;&#x3D;&#x3D; numRows;
+    }
   }
 
   /** Selects all rows if they are not all selected; otherwise clear selection. */
-  public masterToggle &#x3D; () &#x3D;&gt; {
-    this.isAllSelected()
-      ? this.selection.clear()
-      : this.swapItemsDS.data.forEach(row &#x3D;&gt; this.selection.select(row));
+  public masterToggle &#x3D; (whichGrid: string &#x3D; &#x27;&#x27;) &#x3D;&gt; {
+    if (whichGrid &amp;&amp; whichGrid &#x3D;&#x3D;&#x3D; &#x27;pending&#x27;) {
+      this.isAllSelected(&#x27;pending&#x27;)
+        ? this.pendingSelection.clear()
+        : this.pendingSwapItemsDS.data.forEach(row &#x3D;&gt;
+            this.pendingSelection.select(row)
+          );
+    } else {
+      this.isAllSelected()
+        ? this.availableSelection.clear()
+        : this.availableSwapItemsDS.data.forEach(row &#x3D;&gt;
+            this.availableSelection.select(row)
+          );
+    }
   }
 
-  public applyFilter &#x3D; (inputVal: string) &#x3D;&gt; {
-    this.swapItemsDS.filter &#x3D; inputVal.trim().toLowerCase();
+  public applyFilter &#x3D; (inputVal: string, whichGrid: string) &#x3D;&gt; {
+    if (whichGrid &#x3D;&#x3D;&#x3D; &#x27;pending&#x27;) {
+      this.pendingSwapItemsDS.filter &#x3D; inputVal.trim().toLowerCase();
+    } else {
+      this.availableSwapItemsDS.filter &#x3D; inputVal.trim().toLowerCase();
+    }
   }
 
   public showEditPostingBtn &#x3D; () &#x3D;&gt; {
     return (
-      this.selection.selected.length &amp;&amp;
-      this.isASelectionOwnedByUser(this.selection)
+      this.availableSelection &amp;&amp;
+      this.availableSelection.selected &amp;&amp;
+      this.availableSelection.selected.length &amp;&amp;
+      this.isASelectionOwnedByUser(this.availableSelection)
     );
   }
   public showDeleteBtn &#x3D; () &#x3D;&gt; {
     return (
-      this.selection.selected.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp;
-      this.selection.selected[0].owner &#x3D;&#x3D;&#x3D; this.currentUserName
+      this.availableSelection &amp;&amp;
+      this.availableSelection.selected &amp;&amp;
+      this.availableSelection.selected.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp;
+      this.availableSelection.selected[0].owner &#x3D;&#x3D;&#x3D; this.currentUid
     );
   }
 
   public showProposeBtn &#x3D; () &#x3D;&gt; {
     return (
-      this.selection.selected.length &amp;&amp;
-      this.isAtleastOneUnOwnedSelection(this.selection)
+      this.availableSelection &amp;&amp;
+      this.availableSelection.selected &amp;&amp;
+      this.availableSelection.selected.length &amp;&amp;
+      this.availableSelection.selected.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp;
+      this.isAtleastOneUnOwnedSelection(this.availableSelection)
     );
   }
 
   private isASelectionOwnedByUser &#x3D; selects &#x3D;&gt; {
     for (const item of selects.selected) {
-      if (item.owner &#x3D;&#x3D;&#x3D; this.currentUserName) {
+      if (item.owner &#x3D;&#x3D;&#x3D; this.currentUid) {
         return true;
       }
     }
@@ -1483,7 +1350,7 @@ export class MainBoardComponent implements OnInit {
   }
   private isAtleastOneUnOwnedSelection &#x3D; selects &#x3D;&gt; {
     for (const item of selects.selected) {
-      if (item.owner !&#x3D;&#x3D; this.currentUserName) {
+      if (item.owner !&#x3D;&#x3D; this.currentUid) {
         return true;
       }
     }
@@ -1492,7 +1359,7 @@ export class MainBoardComponent implements OnInit {
 
   private updateItems &#x3D; updatedItems &#x3D;&gt; {
     for (const updatedItem of updatedItems) {
-      for (let item of this.swapItemsDS.data) {
+      for (let item of this.availableSwapItemsDS.data) {
         if (item.id &#x3D;&#x3D;&#x3D; updatedItem.id) {
           item &#x3D; updatedItem;
         }
@@ -1501,25 +1368,27 @@ export class MainBoardComponent implements OnInit {
   }
 
   private getNextId &#x3D; () &#x3D;&gt; {
-    this.swapItemsDS.data.sort((item1, item2) &#x3D;&gt; {
-      return item1.id - item2.id;
-    });
-    return this.swapItemsDS.data[this.swapItemsDS.data.length - 1].id++;
+    // this.availableSwapItemsDS.data.sort((item1, item2) &#x3D;&gt; {
+    //   return item1.id - item2.id;
+    // });
+    // return this.availableSwapItemsDS.data[
+    //   this.availableSwapItemsDS.data.length - 1
+    // ].id++;
   }
 
   public onDeleteItem &#x3D; selected &#x3D;&gt; {
     if (selected.length &#x3D;&#x3D;&#x3D; 1) {
       this.boardService.deleteItem(selected.id);
-      for (let i &#x3D; 0; i &lt; this.swapItemsDS.data.length; i++) {
-        if (selected[0].id &#x3D;&#x3D;&#x3D; this.swapItemsDS.data[i].id) {
-          this.swapItemsDS.data.splice(i, 1);
-          this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
-            this.swapItemsDS.data
+      for (let i &#x3D; 0; i &lt; this.availableSwapItemsDS.data.length; i++) {
+        if (selected[0].id &#x3D;&#x3D;&#x3D; this.availableSwapItemsDS.data[i].id) {
+          this.availableSwapItemsDS.data.splice(i, 1);
+          this.availableSwapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+            this.availableSwapItemsDS.data
           );
-          this.swapItemsDS.paginator &#x3D; this.paginator;
-          this.swapItemsDS.sort &#x3D; this.sort;
+          this.availableSwapItemsDS.paginator &#x3D; this.paginator.toArray()[0];
+          this.availableSwapItemsDS.sort &#x3D; this.sort.toArray()[0];
 
-          this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+          this.availableSelection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
         }
       }
     } else {
@@ -1536,35 +1405,37 @@ export class MainBoardComponent implements OnInit {
         data: {
           title: &#x27;Add Item&#x27;,
           isEdit: false,
-          currentUserName: this.currentUserName,
+          currentUser: this.currentUid,
+          currentUserName: this.currentUsername
           // tslint:disable-next-line:arrow-return-shorthand
-          nextId: this.getNextId()
         }
       })
       .afterClosed()
-      .subscribe(result &#x3D;&gt; {
+      .subscribe((result: SwapItem) &#x3D;&gt; {
         if (result) {
+          result.untappedId &#x3D; &#x27;&#x27;;
+          result.breweryDBId &#x3D; &#x27;&#x27;;
           this.boardService.addItem(result);
           // this.swapItemsDS.data.push(result);
-          this.swapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
-            this.swapItemsDS.data
+          this.availableSwapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+            this.availableSwapItemsDS.data
           );
-          this.swapItemsDS.paginator &#x3D; this.paginator;
-          this.swapItemsDS.sort &#x3D; this.sort;
+          this.availableSwapItemsDS.paginator &#x3D; this.paginator.toArray()[0];
+          this.availableSwapItemsDS.sort &#x3D; this.sort.toArray()[0];
 
-          this.selection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+          this.availableSelection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
         }
       });
   }
   public onEditItem &#x3D; () &#x3D;&gt; {
     this.matDialog
       .open(AddEditItemDialogComponent, {
-        width: &#x27;250px&#x27;,
+        width: &#x27;35vw&#x27;,
         data: {
           title: &#x27;Edit Item(s)&#x27;,
           isEdit: true,
-          items: this.selection.selected.filter((item, index) &#x3D;&gt; {
-            return item.owner &#x3D;&#x3D;&#x3D; this.currentUserName;
+          items: this.availableSelection.selected.filter((item, index) &#x3D;&gt; {
+            return item.owner &#x3D;&#x3D;&#x3D; this.currentUid;
           })
         }
       })
@@ -1575,24 +1446,47 @@ export class MainBoardComponent implements OnInit {
   }
   public onProposeTrade &#x3D; () &#x3D;&gt; {
     const dialogRef &#x3D; this.matDialog.open(ProposeTradeDialogComponent, {
-      width: &#x27;250px&#x27;,
+      width: &#x27;35vw&#x27;,
       data: {
         title: &#x27;Propose Trade&#x27;,
-        items: this.selection.selected.filter((item, index) &#x3D;&gt; {
-          return item.owner !&#x3D;&#x3D; this.currentUserName;
-        }),
+        currentUser: this.currentUid,
+        currentUserName: this.currentUsername,
+        item: this.availableSelection.selected[0],
         ownedItems: this.swapItems.filter((item, index) &#x3D;&gt; {
-          return item.owner &#x3D;&#x3D;&#x3D; this.currentUserName;
+          return item.owner &#x3D;&#x3D;&#x3D; this.currentUid &amp;&amp; item.status !&#x3D;&#x3D; &#x27;pending&#x27;;
         })
       }
     });
 
-    dialogRef.afterClosed().subscribe(result &#x3D;&gt; {
-      const proposals &#x3D; result;
-      console.log(proposals);
+    dialogRef.afterClosed().subscribe((result: Proposal) &#x3D;&gt; {
+      const proposal &#x3D; result;
       // remove proposals from main board (mark them pending trade)
-      // Write new proposals to database
-      // ??refresh grid??
+      for (let i &#x3D; 0; i &lt; this.swapItems.length; i++) {
+        if (
+          result.itemFromBy &#x3D;&#x3D;&#x3D; this.swapItems[i].id ||
+          result.itemFromTo &#x3D;&#x3D;&#x3D; this.swapItems[i].id
+        ) {
+          this.swapItems[i].status &#x3D; &#x27;pending&#x27;;
+          this.boardService.editItem(this.swapItems[i]);
+        }
+      }
+      this.availableSwapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+        this.swapItems.filter((item, index) &#x3D;&gt; {
+          return item.status !&#x3D;&#x3D; &#x27;pending&#x27;;
+        })
+      );
+      this.pendingSwapItemsDS &#x3D; new MatTableDataSource&lt;SwapItem&gt;(
+        this.swapItems.filter((item, index) &#x3D;&gt; {
+          return item.status &#x3D;&#x3D;&#x3D; &#x27;pending&#x27;;
+        })
+      );
+      this.availableSwapItemsDS.paginator &#x3D; this.paginator.toArray()[0];
+      this.availableSwapItemsDS.sort &#x3D; this.sort.toArray()[0];
+      this.availableSelection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
+
+      this.pendingSwapItemsDS.paginator &#x3D; this.paginator.toArray()[1];
+      this.pendingSwapItemsDS.sort &#x3D; this.sort.toArray()[1];
+      this.pendingSelection &#x3D; new SelectionModel&lt;SwapItem&gt;(true, []);
     });
   }
 }
@@ -1601,231 +1495,424 @@ export class MainBoardComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;main-board-container&quot;&gt;
-    &lt;div class&#x3D;&quot;main-board&quot;&gt;
-        &lt;div class&#x3D;&quot;board-toolbar-outer-container&quot;&gt;
-            &lt;button
-                class&#x3D;&quot;board-toolbar-container-button&quot;
-                mat-icon-button
-                color&#x3D;&quot;primary&quot;
-                (click)&#x3D;&quot;onAddItem()&quot;&gt;
-                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;add_circle&lt;/mat-icon&gt;
-                Add Item
-            &lt;/button&gt;
+    &lt;mat-tab-group&gt;
+        &lt;mat-tab label&#x3D;&quot;Available Items&quot;&gt;
+            &lt;div class&#x3D;&quot;main-board&quot;&gt;
+                &lt;div class&#x3D;&quot;board-toolbar-outer-container&quot;&gt;
+                    &lt;button
+                        class&#x3D;&quot;board-toolbar-container-button&quot;
+                        mat-icon-button
+                        color&#x3D;&quot;primary&quot;
+                        (click)&#x3D;&quot;onAddItem()&quot;&gt;
+                        &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;add_circle&lt;/mat-icon&gt;
+                        Add Item
+                    &lt;/button&gt;
 
-            &lt;!-- *ngIf&#x3D;&quot;showEditPostingBtn()&quot; --&gt;
-            &lt;button
-                class&#x3D;&quot;board-toolbar-container-button&quot;
-                mat-icon-button
-                color&#x3D;&quot;primary&quot;
-                *ngIf&#x3D;&quot;false&quot;
-                (click)&#x3D;&quot;onEditItem()&quot;&gt;
-                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/mat-icon&gt;
-                Edit Posting
-            &lt;/button&gt;
-            &lt;!-- *ngIf&#x3D;&quot;showEditPostingBtn()&quot; --&gt;
+                    &lt;!-- *ngIf&#x3D;&quot;showEditPostingBtn()&quot; --&gt;
+                    &lt;button
+                        class&#x3D;&quot;board-toolbar-container-button&quot;
+                        mat-icon-button
+                        color&#x3D;&quot;primary&quot;
+                        *ngIf&#x3D;&quot;false&quot;
+                        (click)&#x3D;&quot;onEditItem()&quot;&gt;
+                        &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/mat-icon&gt;
+                        Edit Posting
+                    &lt;/button&gt;
+                    &lt;!-- *ngIf&#x3D;&quot;showEditPostingBtn()&quot; --&gt;
 
-            &lt;button
-                class&#x3D;&quot;board-toolbar-container-button&quot;
-                mat-icon-button
-                color&#x3D;&quot;primary&quot;
-                *ngIf&#x3D;&quot;showProposeBtn()&quot;
-                (click)&#x3D;&quot;onProposeTrade()&quot;&gt;
-                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;pan_tool&lt;/mat-icon&gt;
-                Propose Trade
-            &lt;/button&gt;
-            &lt;button
-                class&#x3D;&quot;board-toolbar-container-button&quot;
-                mat-icon-button
-                color&#x3D;&quot;primary&quot;
-                *ngIf&#x3D;&quot;showDeleteBtn()&quot;
-                (click)&#x3D;&quot;onDeleteItem(selection.selected)&quot;&gt;
-                &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;delete&lt;/mat-icon&gt;
-                Delete Item
-            &lt;/button&gt;
+                    &lt;button
+                        class&#x3D;&quot;board-toolbar-container-button&quot;
+                        mat-icon-button
+                        color&#x3D;&quot;primary&quot;
+                        *ngIf&#x3D;&quot;showProposeBtn()&quot;
+                        (click)&#x3D;&quot;onProposeTrade()&quot;&gt;
+                        &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;pan_tool&lt;/mat-icon&gt;
+                        Propose Trade
+                    &lt;/button&gt;
+                    &lt;button
+                        class&#x3D;&quot;board-toolbar-container-button&quot;
+                        mat-icon-button
+                        color&#x3D;&quot;primary&quot;
+                        *ngIf&#x3D;&quot;showDeleteBtn()&quot;
+                        (click)&#x3D;&quot;onDeleteItem(availableSelection.selected)&quot;&gt;
+                        &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;delete&lt;/mat-icon&gt;
+                        Delete Item
+                    &lt;/button&gt;
 
-            &lt;div class&#x3D;&quot;board-toolbar-container-filter&quot;&gt;
-                &lt;mat-form-field&gt;
-                    &lt;input
-                        matInput
-                        (keyup)&#x3D;&quot;applyFilter($event.target.value)&quot;
-                        placeholder&#x3D;&quot;Filter&quot;&gt;
-                &lt;/mat-form-field&gt;
+                    &lt;div class&#x3D;&quot;board-toolbar-container-filter&quot;&gt;
+                        &lt;mat-form-field&gt;
+                            &lt;input
+                                matInput
+                                (keyup)&#x3D;&quot;applyFilter($event.target.value)&quot;
+                                placeholder&#x3D;&quot;Filter&quot;&gt;
+                        &lt;/mat-form-field&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;main-board-table-container&quot;&gt;
+                    &lt;table
+                        #table
+                        class&#x3D;&quot;main-board-table mat-elevation-z8&quot;
+                        mat-table
+                        matSort
+                        [dataSource]&#x3D;&quot;availableSwapItemsDS&quot;&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;select&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                &lt;mat-checkbox
+                                    (change)&#x3D;&quot;$event ? masterToggle() : null&quot;
+                                    [checked]&#x3D;&quot;availableSelection &amp;&amp; availableSelection.hasValue() &amp;&amp; isAllSelected()&quot;
+                                    [indeterminate]&#x3D;&quot;availableSelection &amp;&amp; availableSelection.hasValue() &amp;&amp; !isAllSelected()&quot;&gt;
+                                &lt;/mat-checkbox&gt;
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                &lt;mat-checkbox
+                                    (click)&#x3D;&quot;$event.stopPropagation()&quot;
+                                    (change)&#x3D;&quot;$event ? availableSelection.toggle(row) : null&quot;
+                                    [checked]&#x3D;&quot;availableSelection &amp;&amp; availableSelection.isSelected(row)&quot;&gt;
+                                &lt;/mat-checkbox&gt;
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Name
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.name}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;brewery&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Brewery
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.brewery}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;style&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Style
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.style}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;teir&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Teir
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.teir | teirs}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;numAvailable&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                No. Available
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.numAvailable}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;packageSize&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Package Size
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.packageSize | packageSize }}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;ownerDisplayName&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Owner
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.ownerDisplayName }}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;desiredSwap&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Wish to Swap For...
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.desiredSwap}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;ng-container matColumnDef&#x3D;&quot;minTeirAccepted&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Minimum Teir Accepted
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.minTeirAccepted}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
+
+                        &lt;!-- Header and Row Declarations --&gt;
+                        &lt;tbody&gt;
+                            &lt;tr
+                                mat-header-row
+                                *matHeaderRowDef&#x3D;&quot;displayedColumns; sticky: true&quot;&gt;&lt;/tr&gt;
+                            &lt;tr
+                                mat-row
+                                *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;paginator-container&quot;&gt;
+                    &lt;mat-paginator
+                        #paginator0
+                        class&#x3D;&quot;mat-elevation-z8 main-board-paginator&quot;
+                        [pageSizeOptions]&#x3D;&quot;[5, 10, 15]&quot;
+                        showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;main-board-table-container&quot;&gt;
-            &lt;table
-                #table
-                class&#x3D;&quot;main-board-table mat-elevation-z8&quot;
-                mat-table
-                matSort
-                [dataSource]&#x3D;&quot;swapItemsDS&quot;&gt;
+        &lt;/mat-tab&gt;
+        &lt;mat-tab label&#x3D;&quot;Un-Available Items&quot;&gt;
+            &lt;div class&#x3D;&quot;main-board&quot;&gt;
+                &lt;div class&#x3D;&quot;board-toolbar-outer-container&quot;&gt;
+                    &lt;div class&#x3D;&quot;board-toolbar-container-filter&quot;&gt;
+                        &lt;mat-form-field&gt;
+                            &lt;input
+                                matInput
+                                (keyup)&#x3D;&quot;applyFilter($event.target.value, &#x27;pending&#x27;)&quot;
+                                placeholder&#x3D;&quot;Filter&quot;&gt;
+                        &lt;/mat-form-field&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;main-board-table-container&quot;&gt;
+                    &lt;table
+                        #table
+                        class&#x3D;&quot;main-board-table mat-elevation-z8&quot;
+                        mat-table
+                        matSort
+                        [dataSource]&#x3D;&quot;pendingSwapItemsDS&quot;&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;select&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        &lt;mat-checkbox
-                            (change)&#x3D;&quot;$event ? masterToggle() : null&quot;
-                            [checked]&#x3D;&quot;selection.hasValue() &amp;&amp; isAllSelected()&quot;
-                            [indeterminate]&#x3D;&quot;selection.hasValue() &amp;&amp; !isAllSelected()&quot;&gt;
-                        &lt;/mat-checkbox&gt;
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        &lt;mat-checkbox
-                            (click)&#x3D;&quot;$event.stopPropagation()&quot;
-                            (change)&#x3D;&quot;$event ? selection.toggle(row) : null&quot;
-                            [checked]&#x3D;&quot;selection.isSelected(row)&quot;&gt;
-                        &lt;/mat-checkbox&gt;
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;select&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                &lt;mat-checkbox
+                                    (change)&#x3D;&quot;$event ? masterToggle(&#x27;pending&#x27;) : null&quot;
+                                    [checked]&#x3D;&quot;pendingSelection &amp;&amp; pendingSelection.hasValue() &amp;&amp; isAllSelected(&#x27;pending&#x27;)&quot;
+                                    [indeterminate]&#x3D;&quot;pendingSelection &amp;&amp; pendingSelection.hasValue() &amp;&amp; !isAllSelected(&#x27;pending&#x27;)&quot;&gt;
+                                &lt;/mat-checkbox&gt;
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                &lt;mat-checkbox
+                                    (click)&#x3D;&quot;$event.stopPropagation()&quot;
+                                    (change)&#x3D;&quot;$event ? pendingSelection.toggle(row) : null&quot;
+                                    [checked]&#x3D;&quot;pendingSelection &amp;&amp; pendingSelection.isSelected(row)&quot;&gt;
+                                &lt;/mat-checkbox&gt;
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        Name
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.name}}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;name&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Name
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.name}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;brewery&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        Brewery
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.brewery}}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;brewery&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Brewery
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.brewery}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;style&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        Style
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.style}}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;style&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Style
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.style}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;teir&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        Teir
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.teir | teirs}}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;teir&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Teir
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.teir | teirs}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;numAvailable&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        No. Available
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.numAvailable}}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;numAvailable&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                No. Available
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.numAvailable}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;packageSize&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        Package Size
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.packageSize | packageSize }}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;packageSize&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Package Size
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.packageSize | packageSize }}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;owner&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        Owner
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.owner}}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;ownerDisplayName&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Owner
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.ownerDisplayName}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;desiredSwap&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        Wish to Swap For...
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.desiredSwap}}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;desiredSwap&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Wish to Swap For...
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.desiredSwap}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;ng-container matColumnDef&#x3D;&quot;minTeirAccepted&quot;&gt;
-                    &lt;th
-                        mat-header-cell
-                        mat-sort-header
-                        *matHeaderCellDef&gt;
-                        Minimum Teir Accepted
-                    &lt;/th&gt;
-                    &lt;td
-                        mat-cell
-                        *matCellDef&#x3D;&quot;let row&quot;&gt;
-                        {{row.minTeirAccepted}}
-                    &lt;/td&gt;
-                &lt;/ng-container&gt;
+                        &lt;ng-container matColumnDef&#x3D;&quot;minTeirAccepted&quot;&gt;
+                            &lt;th
+                                mat-header-cell
+                                mat-sort-header
+                                *matHeaderCellDef&gt;
+                                Minimum Teir Accepted
+                            &lt;/th&gt;
+                            &lt;td
+                                mat-cell
+                                *matCellDef&#x3D;&quot;let row&quot;&gt;
+                                {{row.minTeirAccepted}}
+                            &lt;/td&gt;
+                        &lt;/ng-container&gt;
 
-                &lt;!-- Header and Row Declarations --&gt;
-                &lt;tbody&gt;
-                    &lt;tr
-                        mat-header-row
-                        *matHeaderRowDef&#x3D;&quot;displayedColumns; sticky: true&quot;&gt;&lt;/tr&gt;
-                    &lt;tr
-                        mat-row
-                        *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
-                &lt;/tbody&gt;
-            &lt;/table&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;paginator-container&quot;&gt;
-            &lt;mat-paginator
-                class&#x3D;&quot;mat-elevation-z8 main-board-paginator&quot;
-                [pageSizeOptions]&#x3D;&quot;[5, 10, 15]&quot;
-                showFirstLastButtons&gt;&lt;/mat-paginator&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+                        &lt;!-- Header and Row Declarations --&gt;
+                        &lt;tbody&gt;
+                            &lt;tr
+                                mat-header-row
+                                *matHeaderRowDef&#x3D;&quot;displayedColumns; sticky: true&quot;&gt;&lt;/tr&gt;
+                            &lt;tr
+                                mat-row
+                                *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;paginator-container&quot;&gt;
+                    &lt;mat-paginator
+                        #paginator1
+                        class&#x3D;&quot;mat-elevation-z8 main-board-paginator&quot;
+                        [pageSizeOptions]&#x3D;&quot;[5, 10, 15]&quot;
+                        showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/mat-tab&gt;
+    &lt;/mat-tab-group&gt;
 &lt;/div&gt;
 </code></pre>
     </div>
@@ -1912,8 +1999,8 @@ export class MainBoardComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="main-board-container">    <div class="main-board">        <div class="board-toolbar-outer-container">            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                (click)="onAddItem()">                <mat-icon class="material-icons">add_circle</mat-icon>                Add Item            </button>            <!-- *ngIf="showEditPostingBtn()" -->            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                *ngIf="false"                (click)="onEditItem()">                <mat-icon class="material-icons">edit</mat-icon>                Edit Posting            </button>            <!-- *ngIf="showEditPostingBtn()" -->            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                *ngIf="showProposeBtn()"                (click)="onProposeTrade()">                <mat-icon class="material-icons">pan_tool</mat-icon>                Propose Trade            </button>            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                *ngIf="showDeleteBtn()"                (click)="onDeleteItem(selection.selected)">                <mat-icon class="material-icons">delete</mat-icon>                Delete Item            </button>            <div class="board-toolbar-container-filter">                <mat-form-field>                    <input                        matInput                        (keyup)="applyFilter($event.target.value)"                        placeholder="Filter">                </mat-form-field>            </div>        </div>        <div class="main-board-table-container">            <table                #table                class="main-board-table mat-elevation-z8"                mat-table                matSort                [dataSource]="swapItemsDS">                <ng-container matColumnDef="select">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        <mat-checkbox                            (change)="$event ? masterToggle() : null"                            [checked]="selection.hasValue() && isAllSelected()"                            [indeterminate]="selection.hasValue() && !isAllSelected()">                        </mat-checkbox>                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        <mat-checkbox                            (click)="$event.stopPropagation()"                            (change)="$event ? selection.toggle(row) : null"                            [checked]="selection.isSelected(row)">                        </mat-checkbox>                    </td>                </ng-container>                <ng-container matColumnDef="name">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Name                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.name}}                    </td>                </ng-container>                <ng-container matColumnDef="brewery">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Brewery                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.brewery}}                    </td>                </ng-container>                <ng-container matColumnDef="style">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Style                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.style}}                    </td>                </ng-container>                <ng-container matColumnDef="teir">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Teir                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.teir | teirs}}                    </td>                </ng-container>                <ng-container matColumnDef="numAvailable">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        No. Available                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.numAvailable}}                    </td>                </ng-container>                <ng-container matColumnDef="packageSize">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Package Size                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.packageSize | packageSize }}                    </td>                </ng-container>                <ng-container matColumnDef="owner">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Owner                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.owner}}                    </td>                </ng-container>                <ng-container matColumnDef="desiredSwap">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Wish to Swap For...                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.desiredSwap}}                    </td>                </ng-container>                <ng-container matColumnDef="minTeirAccepted">                    <th                        mat-header-cell                        mat-sort-header                        *matHeaderCellDef>                        Minimum Teir Accepted                    </th>                    <td                        mat-cell                        *matCellDef="let row">                        {{row.minTeirAccepted}}                    </td>                </ng-container>                <!-- Header and Row Declarations -->                <tbody>                    <tr                        mat-header-row                        *matHeaderRowDef="displayedColumns; sticky: true"></tr>                    <tr                        mat-row                        *matRowDef="let row; columns: displayedColumns;"></tr>                </tbody>            </table>        </div>        <div class="paginator-container">            <mat-paginator                class="mat-elevation-z8 main-board-paginator"                [pageSizeOptions]="[5, 10, 15]"                showFirstLastButtons></mat-paginator>        </div>    </div></div></div>'
-    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
+        var COMPONENT_TEMPLATE = '<div><div class="main-board-container">    <mat-tab-group>        <mat-tab label="Available Items">            <div class="main-board">                <div class="board-toolbar-outer-container">                    <button                        class="board-toolbar-container-button"                        mat-icon-button                        color="primary"                        (click)="onAddItem()">                        <mat-icon class="material-icons">add_circle</mat-icon>                        Add Item                    </button>                    <!-- *ngIf="showEditPostingBtn()" -->                    <button                        class="board-toolbar-container-button"                        mat-icon-button                        color="primary"                        *ngIf="false"                        (click)="onEditItem()">                        <mat-icon class="material-icons">edit</mat-icon>                        Edit Posting                    </button>                    <!-- *ngIf="showEditPostingBtn()" -->                    <button                        class="board-toolbar-container-button"                        mat-icon-button                        color="primary"                        *ngIf="showProposeBtn()"                        (click)="onProposeTrade()">                        <mat-icon class="material-icons">pan_tool</mat-icon>                        Propose Trade                    </button>                    <button                        class="board-toolbar-container-button"                        mat-icon-button                        color="primary"                        *ngIf="showDeleteBtn()"                        (click)="onDeleteItem(availableSelection.selected)">                        <mat-icon class="material-icons">delete</mat-icon>                        Delete Item                    </button>                    <div class="board-toolbar-container-filter">                        <mat-form-field>                            <input                                matInput                                (keyup)="applyFilter($event.target.value)"                                placeholder="Filter">                        </mat-form-field>                    </div>                </div>                <div class="main-board-table-container">                    <table                        #table                        class="main-board-table mat-elevation-z8"                        mat-table                        matSort                        [dataSource]="availableSwapItemsDS">                        <ng-container matColumnDef="select">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                <mat-checkbox                                    (change)="$event ? masterToggle() : null"                                    [checked]="availableSelection && availableSelection.hasValue() && isAllSelected()"                                    [indeterminate]="availableSelection && availableSelection.hasValue() && !isAllSelected()">                                </mat-checkbox>                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                <mat-checkbox                                    (click)="$event.stopPropagation()"                                    (change)="$event ? availableSelection.toggle(row) : null"                                    [checked]="availableSelection && availableSelection.isSelected(row)">                                </mat-checkbox>                            </td>                        </ng-container>                        <ng-container matColumnDef="name">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Name                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.name}}                            </td>                        </ng-container>                        <ng-container matColumnDef="brewery">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Brewery                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.brewery}}                            </td>                        </ng-container>                        <ng-container matColumnDef="style">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Style                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.style}}                            </td>                        </ng-container>                        <ng-container matColumnDef="teir">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Teir                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.teir | teirs}}                            </td>                        </ng-container>                        <ng-container matColumnDef="numAvailable">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                No. Available                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.numAvailable}}                            </td>                        </ng-container>                        <ng-container matColumnDef="packageSize">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Package Size                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.packageSize | packageSize }}                            </td>                        </ng-container>                        <ng-container matColumnDef="ownerDisplayName">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Owner                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.ownerDisplayName }}                            </td>                        </ng-container>                        <ng-container matColumnDef="desiredSwap">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Wish to Swap For...                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.desiredSwap}}                            </td>                        </ng-container>                        <ng-container matColumnDef="minTeirAccepted">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Minimum Teir Accepted                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.minTeirAccepted}}                            </td>                        </ng-container>                        <!-- Header and Row Declarations -->                        <tbody>                            <tr                                mat-header-row                                *matHeaderRowDef="displayedColumns; sticky: true"></tr>                            <tr                                mat-row                                *matRowDef="let row; columns: displayedColumns;"></tr>                        </tbody>                    </table>                </div>                <div class="paginator-container">                    <mat-paginator                        #paginator0                        class="mat-elevation-z8 main-board-paginator"                        [pageSizeOptions]="[5, 10, 15]"                        showFirstLastButtons></mat-paginator>                </div>            </div>        </mat-tab>        <mat-tab label="Un-Available Items">            <div class="main-board">                <div class="board-toolbar-outer-container">                    <div class="board-toolbar-container-filter">                        <mat-form-field>                            <input                                matInput                                (keyup)="applyFilter($event.target.value, \'pending\')"                                placeholder="Filter">                        </mat-form-field>                    </div>                </div>                <div class="main-board-table-container">                    <table                        #table                        class="main-board-table mat-elevation-z8"                        mat-table                        matSort                        [dataSource]="pendingSwapItemsDS">                        <ng-container matColumnDef="select">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                <mat-checkbox                                    (change)="$event ? masterToggle(\'pending\') : null"                                    [checked]="pendingSelection && pendingSelection.hasValue() && isAllSelected(\'pending\')"                                    [indeterminate]="pendingSelection && pendingSelection.hasValue() && !isAllSelected(\'pending\')">                                </mat-checkbox>                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                <mat-checkbox                                    (click)="$event.stopPropagation()"                                    (change)="$event ? pendingSelection.toggle(row) : null"                                    [checked]="pendingSelection && pendingSelection.isSelected(row)">                                </mat-checkbox>                            </td>                        </ng-container>                        <ng-container matColumnDef="name">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Name                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.name}}                            </td>                        </ng-container>                        <ng-container matColumnDef="brewery">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Brewery                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.brewery}}                            </td>                        </ng-container>                        <ng-container matColumnDef="style">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Style                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.style}}                            </td>                        </ng-container>                        <ng-container matColumnDef="teir">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Teir                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.teir | teirs}}                            </td>                        </ng-container>                        <ng-container matColumnDef="numAvailable">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                No. Available                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.numAvailable}}                            </td>                        </ng-container>                        <ng-container matColumnDef="packageSize">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Package Size                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.packageSize | packageSize }}                            </td>                        </ng-container>                        <ng-container matColumnDef="ownerDisplayName">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Owner                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.ownerDisplayName}}                            </td>                        </ng-container>                        <ng-container matColumnDef="desiredSwap">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Wish to Swap For...                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.desiredSwap}}                            </td>                        </ng-container>                        <ng-container matColumnDef="minTeirAccepted">                            <th                                mat-header-cell                                mat-sort-header                                *matHeaderCellDef>                                Minimum Teir Accepted                            </th>                            <td                                mat-cell                                *matCellDef="let row">                                {{row.minTeirAccepted}}                            </td>                        </ng-container>                        <!-- Header and Row Declarations -->                        <tbody>                            <tr                                mat-header-row                                *matHeaderRowDef="displayedColumns; sticky: true"></tr>                            <tr                                mat-row                                *matRowDef="let row; columns: displayedColumns;"></tr>                        </tbody>                    </table>                </div>                <div class="paginator-container">                    <mat-paginator                        #paginator1                        class="mat-elevation-z8 main-board-paginator"                        [pageSizeOptions]="[5, 10, 15]"                        showFirstLastButtons></mat-paginator>                </div>            </div>        </mat-tab>    </mat-tab-group></div></div>'
+    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AdminBeersComponent', 'selector': 'admin-beers'},{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AdminProposalsComponent', 'selector': 'admin-proposals'},{'name': 'AdminUsersComponent', 'selector': 'admin-users'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'MainBoardComponent'};
 </script>

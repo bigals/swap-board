@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>NotFoundComponent</li>
+  <li>AdminDashboardComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/auth/not-found/not-found.component.ts</code>
+    <code>src/app/admin/admin-dashboard/admin-dashboard.component.ts</code>
 </p>
 
 
@@ -91,19 +91,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-not-found</code></td>
+                <td class="col-md-9"><code>app-admin-dashboard</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./not-found.component.scss</code></td>
+                <td class="col-md-9"><code>./admin-dashboard.component.scss</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./not-found.component.html</code></td>
+                <td class="col-md-9"><code>./admin-dashboard.component.html</code></td>
             </tr>
 
 
@@ -156,7 +156,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/auth/not-found/not-found.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/admin/admin-dashboard/admin-dashboard.component.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -195,7 +195,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/auth/not-found/not-found.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/admin/admin-dashboard/admin-dashboard.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -221,11 +221,11 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;app-not-found&#x27;,
-  templateUrl: &#x27;./not-found.component.html&#x27;,
-  styleUrls: [&#x27;./not-found.component.scss&#x27;]
+  selector: &#x27;app-admin-dashboard&#x27;,
+  templateUrl: &#x27;./admin-dashboard.component.html&#x27;,
+  styleUrls: [&#x27;./admin-dashboard.component.scss&#x27;]
 })
-export class NotFoundComponent implements OnInit {
+export class AdminDashboardComponent implements OnInit {
 
   constructor() { }
 
@@ -237,15 +237,23 @@ export class NotFoundComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;
-    These are not the droids you are looking for! Use the Menu to head back to somewhere thats known.
-&lt;/p&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;mat-tab-group&gt;
+    &lt;mat-tab label&#x3D;&quot;Users&quot;&gt;
+      &lt;admin-users&gt;&lt;/admin-users&gt;
+    &lt;/mat-tab&gt;
+    &lt;mat-tab label&#x3D;&quot;Proposals&quot;&gt;
+      &lt;admin-proposals&gt;&lt;/admin-proposals&gt;
+    &lt;/mat-tab&gt;
+    &lt;mat-tab label&#x3D;&quot;Beers&quot;&gt;
+      &lt;admin-beers&gt;&lt;/admin-beers&gt;
+    &lt;/mat-tab&gt;
+&lt;/mat-tab-group&gt;
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./not-found.component.scss</code>
+                    <code>./admin-dashboard.component.scss</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss"></code></pre>
     </div>
@@ -275,10 +283,10 @@ export class NotFoundComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>    These are not the droids you are looking for! Use the Menu to head back to somewhere thats known.</p></div>'
+        var COMPONENT_TEMPLATE = '<div><mat-tab-group>    <mat-tab label="Users">      <admin-users></admin-users>    </mat-tab>    <mat-tab label="Proposals">      <admin-proposals></admin-proposals>    </mat-tab>    <mat-tab label="Beers">      <admin-beers></admin-beers>    </mat-tab></mat-tab-group></div>'
     var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AdminBeersComponent', 'selector': 'admin-beers'},{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AdminProposalsComponent', 'selector': 'admin-proposals'},{'name': 'AdminUsersComponent', 'selector': 'admin-users'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'NotFoundComponent'};
+    var ACTUAL_COMPONENT = {'name': 'AdminDashboardComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -312,7 +320,7 @@ export class NotFoundComponent implements OnInit {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'NotFoundComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdminDashboardComponent.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

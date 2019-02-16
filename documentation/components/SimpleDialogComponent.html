@@ -294,16 +294,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            data
-                            </b>
+                            data</b>
                             <a href="#data"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>data:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -332,16 +325,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            dialogRef
-                            </b>
+                            dialogRef</b>
                             <a href="#dialogRef"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>dialogRef:     <code><a href="../components/SimpleDialogComponent.html" target="_self" >MatDialogRef&lt;SimpleDialogComponent&gt;</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -367,23 +353,14 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onAccept
-                            </b>
+                            onAccept</b>
                             <a href="#onAccept"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onAccept:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.dialogRef.close(this.data.inputValue);
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
@@ -403,23 +380,14 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onCancel
-                            </b>
+                            onCancel</b>
                             <a href="#onCancel"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onCancel:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.dialogRef.close();
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
@@ -480,20 +448,19 @@ export class SimpleDialogComponent implements OnInit {
         &lt;input
             matInput
             *ngIf&#x3D;&quot;data.wantsInput&quot;
-            [(value)]&#x3D;&quot;data.inputValue&quot;
-            disabled&gt;
+            [(ngModel)]&#x3D;&quot;data.inputValue&quot;&gt;
     &lt;/mat-form-field&gt;
 &lt;/div&gt;
 &lt;div mat-dialog-actions&gt;
     &lt;button
-        mat-raised-button
+        mat-flat-button
         color&#x3D;&quot;primary&quot;
         class&#x3D;&quot;modal-btns&quot;
         (click)&#x3D;&quot;onCancel()&quot;&gt;
         {{data.cancelBtnText}}
     &lt;/button&gt;
     &lt;button
-        mat-raised-button
+        mat-flat-button
         color&#x3D;&quot;primary&quot;
         class&#x3D;&quot;modal-btns&quot;
         (click)&#x3D;&quot;onAccept()&quot;
@@ -536,8 +503,8 @@ export class SimpleDialogComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>{{data.title}}</h1><div mat-dialog-content>    {{data.simpleMessage}}    <mat-form-field class="profile-form-field">        <label>Image URL</label>        <input            matInput            *ngIf="data.wantsInput"            [(value)]="data.inputValue"            disabled>    </mat-form-field></div><div mat-dialog-actions>    <button        mat-raised-button        color="primary"        class="modal-btns"        (click)="onCancel()">        {{data.cancelBtnText}}    </button>    <button        mat-raised-button        color="primary"        class="modal-btns"        (click)="onAccept()"        cdkFocusInitial>        {{data.acceptBtnText}}    </button></div></div>'
-    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
+        var COMPONENT_TEMPLATE = '<div><h1 mat-dialog-title>{{data.title}}</h1><div mat-dialog-content>    {{data.simpleMessage}}    <mat-form-field class="profile-form-field">        <label>Image URL</label>        <input            matInput            *ngIf="data.wantsInput"            [(ngModel)]="data.inputValue">    </mat-form-field></div><div mat-dialog-actions>    <button        mat-flat-button        color="primary"        class="modal-btns"        (click)="onCancel()">        {{data.cancelBtnText}}    </button>    <button        mat-flat-button        color="primary"        class="modal-btns"        (click)="onAccept()"        cdkFocusInitial>        {{data.acceptBtnText}}    </button></div></div>'
+    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AdminBeersComponent', 'selector': 'admin-beers'},{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AdminProposalsComponent', 'selector': 'admin-proposals'},{'name': 'AdminUsersComponent', 'selector': 'admin-users'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'SimpleDialogComponent'};
 </script>

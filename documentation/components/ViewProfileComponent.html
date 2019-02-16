@@ -311,16 +311,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            isEditing
-                            </b>
+                            isEditing</b>
                             <a href="#isEditing"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>isEditing:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -346,41 +339,14 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onChangeUserImage
-                            </b>
+                            onChangeUserImage</b>
                             <a href="#onChangeUserImage"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onChangeUserImage:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.matDialog
-      .open(SimpleDialogComponent, {
-        width: &#x27;35vw&#x27;,
-        data: {
-          title: &#x27;Change profile picture&#x27;,
-          wantsInput: true,
-          cancelBtnText: &#x27;Cancel&#x27;,
-          acceptBtnText: &#x27;Save Picture&#x27;,
-          simpleMessage:
-            &#x27;Please supply a url to an image (google image links should work)&#x27;
-        }
-      })
-      .afterClosed()
-      .subscribe(result &#x3D;&gt; {
-        if (result) {
-          this.profile.image &#x3D; result;
-          this.userService.updateCurrentUser(this.profile);
-        }
-      });
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
@@ -400,23 +366,14 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onEditProfile
-                            </b>
+                            onEditProfile</b>
                             <a href="#onEditProfile"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onEditProfile:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.isEditing &#x3D; true;
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
@@ -436,30 +393,14 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            onSubmitChanges
-                            </b>
+                            onSubmitChanges</b>
                             <a href="#onSubmitChanges"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>onSubmitChanges:     <code></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>() &#x3D;&gt; {
-    this.userService
-      .updateCurrentUser(this.profile)
-      .then(() &#x3D;&gt; {
-        this.isEditing &#x3D; false;
-      })
-      .catch(() &#x3D;&gt; {
-        window.alert(&#x27;Saving Changes Failed, Try Again.&#x27;);
-      });
-  }</code>
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
                         </td>
                     </tr>
                         <tr>
@@ -479,16 +420,9 @@
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            profile
-                            </b>
+                            profile</b>
                             <a href="#profile"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>profile:     <code><a href="../classes/SwapBoardUserModel.html" target="_self" >SwapBoardUserModel</a></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -576,7 +510,14 @@ export class ViewProfileComponent implements OnInit {
       .subscribe(result &#x3D;&gt; {
         if (result) {
           this.profile.image &#x3D; result;
-          this.userService.updateCurrentUser(this.profile);
+          this.userService
+            .updateCurrentUser(this.profile)
+            .then(() &#x3D;&gt; {
+              console.log(&#x27;&#x27;);
+            })
+            .catch(() &#x3D;&gt; {
+              console.log(&#x27;&#x27;);
+            });
         }
       });
   }
@@ -604,7 +545,7 @@ export class ViewProfileComponent implements OnInit {
                 class&#x3D;&quot;board-toolbar-container-button&quot;
                 mat-icon-button
                 color&#x3D;&quot;primary&quot;
-                (click)&#x3D;&quot;onEditProfile()&quot;&gt;
+                (click)&#x3D;&quot;onSubmitChanges()&quot;&gt;
                 &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;save&lt;/mat-icon&gt;
                 Save Changes
             &lt;/button&gt;
@@ -612,7 +553,8 @@ export class ViewProfileComponent implements OnInit {
                 &lt;label&gt;Display Name&lt;/label&gt;
                 &lt;input
                     matInput
-                    [(value)]&#x3D;&quot;profile.name&quot;&gt;
+                    disabled
+                    [(ngModel)]&#x3D;&quot;profile.name&quot;&gt;
             &lt;/mat-form-field&gt;
             &lt;mat-form-field class&#x3D;&quot;profile-form-field&quot;&gt;
                 &lt;label&gt;Account Type&lt;/label&gt;
@@ -627,7 +569,7 @@ export class ViewProfileComponent implements OnInit {
                 class&#x3D;&quot;board-toolbar-container-button&quot;
                 mat-icon-button
                 color&#x3D;&quot;primary&quot;
-                (click)&#x3D;&quot;onSubmitChanges()&quot;&gt;
+                (click)&#x3D;&quot;onEditProfile()&quot;&gt;
                 &lt;mat-icon class&#x3D;&quot;material-icons&quot;&gt;edit&lt;/mat-icon&gt;
                 Edit Profile
             &lt;/button&gt;
@@ -720,8 +662,8 @@ export class ViewProfileComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="profile-outer-container">    <div class="profile-image-container">        <div class="colElemSpacer"></div>        <img            class="user-image"            src="{{profile.image}}">        <button            mat-flat-button            style="margin: auto;"            (click)="onChangeUserImage()">            Change User Image        </button>    </div>    <div class="profile-form-container">        <div *ngIf="isEditing">            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                (click)="onEditProfile()">                <mat-icon class="material-icons">save</mat-icon>                Save Changes            </button>            <mat-form-field class="profile-form-field">                <label>Display Name</label>                <input                    matInput                    [(value)]="profile.name">            </mat-form-field>            <mat-form-field class="profile-form-field">                <label>Account Type</label>                <input                    matInput                    [(value)]="profile.provider"                    disabled>            </mat-form-field>        </div>        <div *ngIf="!isEditing">            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                (click)="onSubmitChanges()">                <mat-icon class="material-icons">edit</mat-icon>                Edit Profile            </button>            <mat-form-field class="profile-form-field">                <label>Display Name</label>                <input                    matInput                    [(value)]="profile.name"                    disabled>            </mat-form-field>            <mat-form-field class="profile-form-field">                <label>Account Type</label>                <input                    matInput                    [(value)]="profile.provider"                    disabled>            </mat-form-field>        </div>    </div>    <div class="profile-btn-container"></div></div></div>'
-    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
+        var COMPONENT_TEMPLATE = '<div><div class="profile-outer-container">    <div class="profile-image-container">        <div class="colElemSpacer"></div>        <img            class="user-image"            src="{{profile.image}}">        <button            mat-flat-button            style="margin: auto;"            (click)="onChangeUserImage()">            Change User Image        </button>    </div>    <div class="profile-form-container">        <div *ngIf="isEditing">            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                (click)="onSubmitChanges()">                <mat-icon class="material-icons">save</mat-icon>                Save Changes            </button>            <mat-form-field class="profile-form-field">                <label>Display Name</label>                <input                    matInput                    disabled                    [(ngModel)]="profile.name">            </mat-form-field>            <mat-form-field class="profile-form-field">                <label>Account Type</label>                <input                    matInput                    [(value)]="profile.provider"                    disabled>            </mat-form-field>        </div>        <div *ngIf="!isEditing">            <button                class="board-toolbar-container-button"                mat-icon-button                color="primary"                (click)="onEditProfile()">                <mat-icon class="material-icons">edit</mat-icon>                Edit Profile            </button>            <mat-form-field class="profile-form-field">                <label>Display Name</label>                <input                    matInput                    [(value)]="profile.name"                    disabled>            </mat-form-field>            <mat-form-field class="profile-form-field">                <label>Account Type</label>                <input                    matInput                    [(value)]="profile.provider"                    disabled>            </mat-form-field>        </div>    </div>    <div class="profile-btn-container"></div></div></div>'
+    var COMPONENTS = [{'name': 'AddEditItemDialogComponent', 'selector': 'app-add-edit-item-dialog'},{'name': 'AdminBeersComponent', 'selector': 'admin-beers'},{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AdminProposalsComponent', 'selector': 'admin-proposals'},{'name': 'AdminUsersComponent', 'selector': 'admin-users'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EditProfileComponent', 'selector': 'app-edit-profile'},{'name': 'ItemDetailComponent', 'selector': 'app-item-detail'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainBoardComponent', 'selector': 'app-main-board'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProposalBoardComponent', 'selector': 'app-proposal-board'},{'name': 'ProposalDetailComponent', 'selector': 'app-proposal-detail'},{'name': 'ProposeTradeDialogComponent', 'selector': 'app-propose-trade-dialog'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SimpleDialogComponent', 'selector': 'app-simple-dialog'},{'name': 'ViewProfileComponent', 'selector': 'app-view-profile'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ViewProfileComponent'};
 </script>
