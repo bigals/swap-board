@@ -1,0 +1,4 @@
+Copyright 2019 All Rights Reserved by bigals-dev
+This code is not intended for use or distribution,
+with out explicit licesing and consent from the Copyright holder bigals-dev.
+Contact bigals-dev for licensing questions.
