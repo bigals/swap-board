@@ -32,9 +32,9 @@ export class ProposalBoardComponent implements OnInit {
   public currentUserName: string;
   public currentUid: string;
   public swapItems: any;
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatTable) table: MatTable<any>;
+  @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: false}) sort: MatSort;
+  @ViewChild(MatTable, {static: false}) table: MatTable<any>;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
