@@ -26,7 +26,7 @@ export class ProposalBoardComponent implements OnInit {
   public detailItemFromBy: SwapItem;
   public detailItemFromTo: SwapItem;
   public displayedColumns: string[];
-  public proposals: Proposal[];
+  public proposals: any;
   public proposalsDS: MatTableDataSource<Proposal>;
   public selection: SelectionModel<Proposal>;
   public currentUserName: string;
@@ -61,27 +61,33 @@ export class ProposalBoardComponent implements OnInit {
   }
 
   public initGrid = () => {
-    this.proposalService.getAllProposals().subscribe(result => {
-      for (const docChange of result) {
-        if ((<Proposal>docChange.payload.doc.data()).to === this.currentUid) {
-          this.proposals.push({
-            id: docChange.payload.doc.id,
-            ...docChange.payload.doc.data()
-          } as Proposal);
-        }
-        this.boardService.getAllItems().subscribe((result) => {
-          this.swapItems = {};
-          for (let boardItem of result) {
-            this.swapItems[boardItem.payload.doc.id] = boardItem.payload.doc.data();
-          }
-          this.proposalsDS = new MatTableDataSource<Proposal>(this.proposals);
+    this.proposals = this.proposalService.getAllProposals();
+    this.proposalsDS = new MatTableDataSource<Proposal>(this.proposals);
           this.proposalsDS.paginator = this.paginator;
           this.proposalsDS.sort = this.sort;
 
           this.selection = new SelectionModel<Proposal>(false, []);
-        });
-      }
-    });
+    // this.proposalService.getAllProposals().subscribe(result => {
+    //   for (const docChange of result) {
+    //     if ((<Proposal>docChange.payload.doc.data()).to === this.currentUid) {
+    //       this.proposals.push({
+    //         id: docChange.payload.doc.id,
+    //         ...docChange.payload.doc.data()
+    //       } as Proposal);
+    //     }
+    //     this.boardService.getAllItems().subscribe((result) => {
+    //       this.swapItems = {};
+    //       for (let boardItem of result) {
+    //         this.swapItems[boardItem.payload.doc.id] = boardItem.payload.doc.data();
+    //       }
+    //       this.proposalsDS = new MatTableDataSource<Proposal>(this.proposals);
+    //       this.proposalsDS.paginator = this.paginator;
+    //       this.proposalsDS.sort = this.sort;
+
+    //       this.selection = new SelectionModel<Proposal>(false, []);
+    //     });
+    //   }
+    // });
   }
 
   public onAccept = () => {

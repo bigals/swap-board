@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "swap-board-20190313173627-authRole",
+            "UnauthRoleArn": "arn:aws:iam::446918574165:role/swap-board-20190313173627-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::446918574165:role/swap-board-20190313173627-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "swap-board-20190313173627-deployment",
+            "UnauthRoleName": "swap-board-20190313173627-unauthRole",
+            "StackName": "swap-board-20190313173627",
+            "StackId": "arn:aws:cloudformation:us-east-1:446918574165:stack/swap-board-20190313173627/25bd82a0-45d8-11e9-adee-12069a319f62"
+        },
+        "categories": {
+            "auth": {
+                "cognitoae0d066e": {}
+            }
+        }
+    }
+}

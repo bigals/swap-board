@@ -37,7 +37,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFirestoreModule, FirestoreSettingsToken } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AdminModule } from './admin/admin.module';
 import { AdminRoutingModule } from './admin/admin-routing.module';
@@ -79,7 +79,7 @@ import { AdminRoutingModule } from './admin/admin-routing.module';
     SwapBoardRoutingModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{ provide: FirestoreSettingsToken, useValue: {} }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

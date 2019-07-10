@@ -34,7 +34,7 @@ export class ProposeTradeDialogComponent implements OnInit {
     };
   }
   public onCreate = () => {
-    this.proposalService.putProposal(this.data.proposal);
+    this.proposalService.createProposal(this.data.proposal);
     this.dialogRef.close(this.data.proposal);
   }
   public onCancel = () => {

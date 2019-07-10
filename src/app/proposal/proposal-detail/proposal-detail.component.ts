@@ -23,19 +23,19 @@ export class ProposalDetailComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.proposalService.getProposal(this.route.snapshot.params.id).subscribe((result) => {
-      this.proposal = result.payload.data() as Proposal;
-      let itemByObs = this.boardService.getItem(this.proposal.itemFromBy);
-      let itemToObs = this.boardService.getItem(this.proposal.itemFromTo);
+    // this.proposalService.getProposal(this.route.snapshot.params.id).subscribe((result) => {
+    //   this.proposal = result.payload.data() as Proposal;
+    //   let itemByObs = this.boardService.getItem(this.proposal.itemFromBy);
+    //   let itemToObs = this.boardService.getItem(this.proposal.itemFromTo);
 
-      forkJoin([
-        itemByObs,
-        itemToObs
-      ]).subscribe((result) => {
-        this.itemFromBy = result[0].payload.data() as SwapItem;
-        this.itemFromTo = result[1].payload.data() as SwapItem;
-      })
-    });
+    //   forkJoin([
+    //     itemByObs,
+    //     itemToObs
+    //   ]).subscribe((result) => {
+    //     this.itemFromBy = result[0].payload.data() as SwapItem;
+    //     this.itemFromTo = result[1].payload.data() as SwapItem;
+    //   })
+    // });
   }
 
 }

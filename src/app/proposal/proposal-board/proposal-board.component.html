@@ -46,7 +46,7 @@
                 class="proposal-board-table mat-elevation-z8"
                 mat-table
                 matSort
-                [dataSource]="proposalsDS">
+                [dataSource]="proposalsDS | async">
 
                 <ng-container matColumnDef="select">
                     <th
